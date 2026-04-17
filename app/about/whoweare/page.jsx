@@ -43,11 +43,12 @@ export default function AboutPage() {
       </section>
 
       {/* WHO WE ARE */}
-      <section className="py-24 px-6 md:px-16">
+      <section className="py-15 px-6 md:px-16">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-sm text-[#E67C29] font-semibold tracking-wide mb-3">
-            WHO WE ARE
-          </h2>
+         {/* Badge */}
+          <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-black text-sm font-semibold tracking-wide uppercase mb-6">
+     WHO WE ARE
+          </span>
           <h3 className="text-4xl font-bold mb-6">
             A growth engine for Indian suppliers
           </h3>
@@ -75,7 +76,7 @@ export default function AboutPage() {
           <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-black text-sm font-semibold tracking-wide uppercase mb-4">
        OUR ORIGIN
           </span>
-          <h2 className="text-black text-4xl font-bold mb-4"> Born from the factory floor, not a boardroom.</h2>
+          <h2 className="text-black text-3xl font-bold mb-2"> Born from the factory floor, not a boardroom.</h2>
     </div>
       <p className="text-black mb-8 text-lg leading-relaxed text-3xl">
     Our founder spent years inside India’s largest B2B platform, working closely with MSMEs,
@@ -133,7 +134,7 @@ notebook. It became Inquiry Bazaar.
             onClick={() => setActiveIndex(isOpen ? null : i)}
             className="w-full text-left p-6 flex justify-between items-center"
           >
-            <p className="text-black text-xl font-medium">
+            <p className="text-black text-xl font-bold">
               {item.title}
             </p>
 
@@ -166,29 +167,44 @@ notebook. It became Inquiry Bazaar.
       {/* PASSION */}
       <section className="py-24 px-6 md:px-16">
         <div className="max-w-6xl mx-auto text-center mb-16">
-          <h2 className="text-3xl font-bold">
-            We fight for the supplier who deserved the order
+
+   {/* Badge */}
+          <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-black text-sm font-semibold tracking-wide uppercase mb-6">
+         OUR PASSION
+          </span>
+
+          <h2 className="text-3xl font-bold leading-relaxed">
+         We lose sleep over one thing — <br /> the supplier who deserved the
+order but never got it.
           </h2>
+
+          <p className="text-gray-700 text-lg">
+            We are not just building a platform. We are fighting for every MSME that ever lost a deal to a
+            competitor with a better listing, not a better product. Our passion is simple and unshakeable:
+            India’s manufacturers and factory owners are world-class. They just need the world to find
+            them. Every feature we build, every tool we create, every ranking we improve — it all comes
+            from that one fire inside us.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
           {[
             {
-              title: "Underdog Focus",
-              desc: "We help small manufacturers compete with big-budget listings.",
+              title: "Underdog FocusWe fight for the underdog supplier",
+              desc: "The small manufacturer with a great product who keeps getting buried under big-budget listings. We level that playing field.",
             },
             {
-              title: "Real Inquiries",
-              desc: "We care about buyers sending actual messages.",
+              title: "We obsess over real inquiries",
+              desc: "Not impressions. Not views. Actual buyers sending actual messages. That’s the only metric that matters to us.",
             },
             {
-              title: "MSME First",
-              desc: "India’s manufacturers deserve global reach.",
+              title: "We believe in India’s makers",
+              desc: "India’s MSMEs are the backbone of the economy. Our passion is making sure their products reach buyers across every city, state, and border.",
             },
           ].map((item, i) => (
             <div
               key={i}
-              className="group bg-white p-8 rounded-2xl border border-gray-100 
+              className="group bg-white p-8 rounded-2xl border border-[#1C3B6D] 
               shadow-[0_10px_30px_rgba(0,0,0,0.06)] 
               hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] 
               hover:-translate-y-2 transition"
@@ -208,10 +224,11 @@ notebook. It became Inquiry Bazaar.
       <section className="bg-[#0B1F3A] text-white py-20 px-6 md:px-16 text-center">
         <div className="max-w-3xl mx-auto">
           <p className="text-2xl font-semibold leading-relaxed mb-4">
-            “Every MSME deserves a fair shot at the right buyer.”
+          “Every MSME in India deserves a fair shot at the right buyer. We’re here to
+make sure ranking — not luck — decides who gets found.”
           </p>
           <p className="text-white/70">
-            — Sourabh Sachin, Founder & Director
+          Sourabh Sachin — Founder & Director Inquiry Bazaar
           </p>
         </div>
       </section>
@@ -220,13 +237,21 @@ notebook. It became Inquiry Bazaar.
 <section className="py-15 px-6 md:px-16 ">
   <div className="max-w-6xl mx-auto text-center">
 
+   {/* Badge */}
+          <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-black text-sm font-semibold tracking-wide uppercase mb-6">
+       WHAT MAKES US DIFFERENT
+          </span>
+
     {/* HEADING */}
     <h2 className="text-4xl font-bold mb-4">
-      <span className="text-[#0D2865]">What makes us different</span>
+      <span className="text-[#0D2865]">Other platforms list you. We give you verified inquires.</span>
     </h2>
 
-    <p className="text-gray-700 text-lg mb-14">
-      We don’t just list suppliers — we build visibility systems that bring real buyers.
+    <p className="text-gray-800 text-lg mb-14">
+   At Inquiry Bazaar, your listing isn’t just a profile on a page. It’s a strategically optimised
+presence built to attract genuine buyers — not just clicks.
+We combine marketplace infrastructure with deep MSME expertise so your products get
+seen by people who are ready to buy.
     </p>
 
     {/* CARDS */}
@@ -236,26 +261,33 @@ notebook. It became Inquiry Bazaar.
         {
           title: "High-ranking listings",
           icon: TrendingUp,
+          desc:"We optimise every supplier profile for maximum discoverability — because being listed isn’t enough, being found is everything."
         },
         {
           title: "Built for manufacturers",
           icon: Factory,
+          desc:"Designed specifically for Indian MSMEs, factory owners, and wholesalers — not generic global sellers."
         },
         {
           title: "Intent-driven buyers",
           icon: Target,
+          desc:"We attract buyers who are serious — not browsers. Every inquiry on our platform comes with purchase intent."
         },
         {
           title: "Supplier-first philosophy",
           icon: Users,
+          desc:"We sit on the supplier’s side of the table. Your growth is our metric, not just your registration."
         },
         {
           title: "Verified inquiry system",
           icon: ShieldCheck,
+          desc:"We verify every inquiry to ensure quality and reduce noise, so you can focus on real business opportunities, not spam."
         },
         {
           title: "Performance-driven visibility",
           icon: BarChart3,
+          desc:"Our algorithm ensures your products are seen by the right audience at the right time."
+
         },
       ].map((item, i) => {
         const Icon = item.icon;
@@ -273,14 +305,24 @@ notebook. It became Inquiry Bazaar.
             </div>
 
             {/* TEXT */}
-            <p className="text-xl font-medium text-black  leading-snug">
+            <p className="text-xl font-bold text-black  leading-snug">
               {item.title}
+            </p>
+
+            <p className="text-gray-600">
+              {item.desc}
             </p>
           </div>
         );
       })}
 
     </div>
+
+
+
+
+
+
 
     {/* CTA */}
     <div className="mt-16">
@@ -294,21 +336,147 @@ notebook. It became Inquiry Bazaar.
   </div>
 </section>
 
+
+
+
+{/* OUR MISSION */}
+<section className="py-24 px-6 md:px-16 bg-[#0B1F3A]">
+  <div className="max-w-5xl mx-auto text-center">
+
+    {/* Badge */}
+    <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-white text-xs font-semibold tracking-wider uppercase mb-6">
+      OUR MISSION
+    </span>
+
+    {/* Heading */}
+    <h2 className="text-4xl md:text-5xl font-semibold text-white leading-tight mb-6">
+      Turning India’s hidden suppliers into India’s preferred suppliers.
+    </h2>
+
+    {/* Divider */}
+    <div className="w-16 h-[2px] bg-[#E67C29] mx-auto mb-8"></div>
+
+    {/* Content */}
+    <p className="text-white/80 text-lg leading-relaxed max-w-3xl mx-auto">
+      We believe the next wave of Indian B2B growth will come from empowered MSMEs —
+      manufacturers and suppliers who have the right tools, the right visibility, and the right buyers
+      knocking on their door. Inquiry Bazaar is that door.
+    </p>
+
+  </div>
+</section>
+
+
+
+{/* WHERE WE ARE GOING */}
+<section className="py-15 px-6 md:px-16 bg-white">
+  <div className="max-w-7xl mx-auto">
+
+    {/* TOP TEXT */}
+    <div className="max-w-5xl mx-auto text-center mb-20">
+
+      {/* Badge */}
+      <span className="inline-block px-4 py-1.5 rounded-full bg-[#E67C29]/10 text-[#E67C29] text-xs font-semibold tracking-wider uppercase mb-5">
+        WHERE WE ARE GOING
+      </span>
+
+      <h2 className="text-3xl font-semibold text-[#0B1F3A] leading-tight mb-6">
+        To become India’s most trusted B2B discovery platform —
+        where every serious buyer finds the right supplier in minutes,
+        not months.
+      </h2>
+
+      <p className="text-black text-[17px] leading-relaxed max-w-4xl mx-auto">
+        We envision a future where no Indian manufacturer is invisible. Where a factory in Ludhiana
+        reaches a buyer in Surat instantly. Where a fabricator in Rajkot competes on quality — not
+        just on who spends more on ads. We are building the infrastructure that connects ambition
+        with opportunity, across every industry, every city, and every product category in India.
+        Inquiry Bazaar will be the platform where India’s supply chain comes alive.
+      </p>
+    </div>
+
+    {/* CARDS */}
+    <div className="grid md:grid-cols-3 gap-10">
+
+      {/* CARD 1 */}
+      <div className="group relative p-8 rounded-2xl bg-white border border-gray-300 
+        shadow-[0_10px_40px_rgba(0,0,0,0.05)] 
+        hover:shadow-[0_25px_80px_rgba(0,0,0,0.1)] 
+        transition-all duration-500 hover:-translate-y-2">
+
+        {/* Top Accent Line */}
+        <div className="absolute top-0 left-0 w-full h-[3px] bg-[#E67C29] rounded-t-2xl opacity-0 group-hover:opacity-100 transition"></div>
+
+        <p className="text-md font-semibold text-[#E67C29] mb-4 tracking-wide">
+          → Pan-India reach
+        </p>
+
+        <p className="text-black text-[15px] leading-relaxed">
+          Connecting suppliers from every state to buyers across the country — and eventually, beyond
+          borders.
+        </p>
+      </div>
+
+      {/* CARD 2 */}
+      <div className="group relative p-8 rounded-2xl bg-white border border-gray-300 
+        shadow-[0_10px_40px_rgba(0,0,0,0.05)] 
+        hover:shadow-[0_25px_80px_rgba(0,0,0,0.1)] 
+        transition-all duration-500 hover:-translate-y-2">
+
+        <div className="absolute top-0 left-0 w-full h-[3px] bg-[#E67C29] rounded-t-2xl opacity-0 group-hover:opacity-100 transition"></div>
+
+        <p className="text-md font-semibold text-[#E67C29] mb-4 tracking-wide">
+          → Smarter discovery
+        </p>
+
+        <p className="text-black text-[15px] leading-relaxed">
+          Building ranking technology that rewards quality, not just budget — so the best supplier wins, not the
+          biggest spender.
+        </p>
+      </div>
+
+      {/* CARD 3 */}
+      <div className="group relative p-8 rounded-2xl bg-white border border-gray-300 
+        shadow-[0_10px_40px_rgba(0,0,0,0.05)] 
+        hover:shadow-[0_25px_80px_rgba(0,0,0,0.1)] 
+        transition-all duration-500 hover:-translate-y-2">
+
+        <div className="absolute top-0 left-0 w-full h-[3px] bg-[#E67C29] rounded-t-4xl opacity-0 group-hover:opacity-100 transition"></div>
+
+        <p className="text-md font-semibold text-[#E67C29] mb-4 tracking-wide">
+          → MSME empowerment
+        </p>
+
+        <p className="text-black text-[15px] leading-relaxed">
+          Equipping every small business with the digital tools, visibility, and confidence to grow without
+          depending on middlemen.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
       {/* CTA */}
-      <section className="bg-[#F7F6F2] py-20 px-6 md:px-16">
+      <section className="bg-[#F7F6F2]   py-20 px-6 md:px-16">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl p-12 text-center shadow-[0_20px_60px_rgba(0,0,0,0.08)] border border-gray-100">
+          <div className="bg-white flex flex-col rounded-2xl p-12 text-center shadow-[0_20px_60px_rgba(0,0,0,0.08)] border border-gray-100">
             
             <h2 className="text-3xl font-bold mb-4">
               Ready to stop being invisible?
             </h2>
 
-            <p className="text-gray-600 mb-8">
+            <p className="text-black text-lg mb-5">
               List your business on Inquiry Bazaar and start ranking today.
             </p>
-
-            <button className="bg-[#0D2865] hover:bg-[#0B1F3A] text-white px-8 py-3 rounded-full transition shadow-md hover:shadow-lg">
-              Get Started
+<a className="underline text-black text-xl" href="    www.inquirybazaar.com">www.inquirybazaar.com</a>
+            <button className="bg-[#0D2865] w-fit mx-auto mt-3 hover:bg-[#0B1F3A] text-white px-8 py-3 rounded-full transition shadow-md hover:shadow-lg">
+        Get Started
             </button>
 
           </div>
