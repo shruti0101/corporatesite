@@ -46,9 +46,8 @@ export default function Navbar() {
     {
       title: "Blog",
       items: [
-        { name: "Latest Posts", href: "/blog" },
-        { name: "Industry Insights", href: "/blog/insights" },
-        { name: "Success Stories", href: "/blog/success" },
+        { name: "Latest Posts", href: "/blogs" },
+    
       ],
     },
   ];
@@ -61,7 +60,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="w-full fixed top-0 left-0 z-50 bg-white">
+    <header className="w-full sticky top-0 left-0 z-50 bg-white">
       <div className="max-w-[1280px] mx-auto flex">
 
         {/* LOGO */}
