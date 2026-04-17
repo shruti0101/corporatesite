@@ -269,7 +269,7 @@ export default function WhatWeDo() {
 
       {/* CTA Button */}
       <div className="w-full">
-        <div className="bg-[#1b3774] text-white text-center rounded-2xl py-6 md:py-7 text-[18px] md:text-[20px] font-medium tracking-wide">
+        <div className="bg-[#080a3c] text-white text-center rounded-2xl py-6 md:py-7 text-[18px] md:text-[20px] font-medium tracking-wide">
           List your business today <span className="mx-2">→</span> www.inquirybazaar.com
         </div>
       </div>
