@@ -17,7 +17,7 @@ export default function Navbar() {
       ],
     },
     {
-      title: "Life At IndiaMART",
+      title: "Life At InquiryBazaar",
       items: [
         { name: "Career", href: "/career" },
         { name: "Employee Speaks", href: "/employee-speaks" },
