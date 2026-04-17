@@ -8,7 +8,13 @@ import {
   ShieldCheck,
   BarChart3,
 } from "lucide-react"
+
+import { useState } from "react";
+
 export default function AboutPage() {
+
+    const [activeIndex, setActiveIndex] = useState(null);
+
   return (
     <div className="bg-white text-gray-900">
 
@@ -60,62 +66,99 @@ export default function AboutPage() {
  
 
 {/* ORIGIN — PREMIUM TIMELINE */}
-<section className="bg-[#DFE8E6] py-24 px-6 md:px-16">
+<section className="bg-[#DFE8E6] py-18 px-6 md:px-16">
   <div className="max-w-6xl mx-auto">
 
     {/* Heading */}
-    <div className="mb-16 max-w-2xl">
-      <h2 className="text-3xl font-bold mb-4">OUR ORIGIN</h2>
-      <p className="text-black text-lg leading-relaxed">
-        Born from the factory floor, not a boardroom. Our founder spent
-        years working closely with MSMEs and manufacturers across India,
-        understanding what truly drives inquiries.
-      </p>
+    <div className="mb-7 max-w-2xl">
+   {/* Badge */}
+          <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-black text-sm font-semibold tracking-wide uppercase mb-4">
+       OUR ORIGIN
+          </span>
+          <h2 className="text-black text-4xl font-bold mb-4"> Born from the factory floor, not a boardroom.</h2>
     </div>
+      <p className="text-black mb-8 text-lg leading-relaxed text-3xl">
+    Our founder spent years inside India’s largest B2B platform, working closely with MSMEs,
+factory owners, and manufacturers across the country. What he saw wasn’t a technology
+problem — it was a visibility problem. Thousands of genuinely capable suppliers were
+invisible to buyers simply because they didn’t know how to rank. That insight didn’t stay in a
+notebook. It became Inquiry Bazaar.
+      </p>
 
     {/* Timeline */}
-    <div className="relative border-l border-gray-300 pl-8 space-y-10">
+   <div className="relative border-l border-gray-300 pl-8 space-y-6">
 
-      {[
-        {
-          icon: Brain,
-          text: "Deep understanding of buyer behaviour",
-        },
-        {
-          icon: AlertTriangle,
-          text: "Suppliers losing due to poor ranking",
-        },
-        {
-          icon: Rocket,
-          text: "Founded July 16, 2024",
-        },
-        {
-          icon: RefreshCcw,
-          text: "Rebranded to Inquiry Bazaar with purpose",
-        },
-      ].map((item, i) => {
-        const Icon = item.icon;
-        return (
-          <div key={i} className="relative group">
+  {[
+    {
+      icon: Brain,
+      title: "Deep understanding of buyer behaviour",
+      content:
+        "Deep inside India’s B2B ecosystem — studying buyer behaviour, understanding supplier pain, and mapping what actually drives inquiries.",
+    },
+    {
+      icon: AlertTriangle,
+      title: "Suppliers losing due to poor ranking",
+      content:
+        "Good suppliers were losing to average ones — not because of quality, but because of poor listing rankings and zero digital strategy.",
+    },
+    {
+      icon: Rocket,
+      title: "Founded July 16, 2024",
+      content:
+        "Promozione Branding Private Limited was incorporated with a single mission: make great suppliers findable, and help serious buyers reach them faster.",
+    },
+    {
+      icon: RefreshCcw,
+      title: "Rebranded to Inquiry Bazaar with purpose",
+      content:
+        "When we renamed to Inquiry Bazaar, it wasn’t a rebrand. It was a declaration — every inquiry on this platform has a purpose.",
+    },
+  ].map((item, i) => {
+    const Icon = item.icon;
+    const isOpen = activeIndex === i;
 
-            {/* Dot */}
-            <div className="absolute -left-[38px] top-2 w-8 h-8 bg-white border border-gray-300 rounded-full flex items-center justify-center shadow-sm">
-              <Icon className="w-4 h-4 text-[#E67C29]" />
-            </div>
+    return (
+      <div key={i} className="relative">
 
-            {/* Card */}
-            <div className="bg-white p-6 rounded-xl border border-gray-100 
-              shadow-sm hover:shadow-lg transition-all duration-300 
-              group-hover:-translate-y-1">
+        {/* Dot */}
+        <div className="absolute -left-[38px] top-3 w-8 h-8 bg-white border border-gray-300 rounded-full flex items-center justify-center shadow-sm">
+          <Icon className="w-4 h-4 text-[#E67C29]" />
+        </div>
 
-              <p className="text-black text-lg">{item.text}</p>
+        {/* Card */}
+        <div className="bg-white rounded-xl border border-gray-100 shadow-sm transition-all duration-300">
 
-            </div>
+          {/* Header */}
+          <button
+            onClick={() => setActiveIndex(isOpen ? null : i)}
+            className="w-full text-left p-6 flex justify-between items-center"
+          >
+            <p className="text-black text-xl font-medium">
+              {item.title}
+            </p>
+
+            <span className="text-[#E67C29] text-xl">
+              {isOpen ? "−" : "+"}
+            </span>
+          </button>
+
+          {/* Content */}
+          <div
+            className={`overflow-hidden transition-all duration-300 ${
+              isOpen ? "max-h-40 px-6 pb-6" : "max-h-0 px-6"
+            }`}
+          >
+            <p className="text-black text-lg leading-relaxed">
+              {item.content}
+            </p>
           </div>
-        );
-      })}
 
-    </div>
+        </div>
+      </div>
+    );
+  })}
+
+</div>
 
   </div>
 </section>
