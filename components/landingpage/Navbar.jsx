@@ -10,7 +10,7 @@ export default function Navbar() {
     {
       title: "About Us",
       items: [
-        { name: "Company Overview", href: "/about/company" },
+        { name: "Who We Are", href: "/about/whoweare" },
         { name: "Leadership", href: "/about/leadership" },
         { name: "Career", href: "/career" },
         { name: "Contact Us", href: "/contact" },
