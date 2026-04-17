@@ -104,7 +104,7 @@ const growth = [
           </span>
 
           {/* Heading */}
-          <h1 className="text-white text-4xl font-serif md:text-[50px] font-extrabold leading-tight mb-6">
+          <h1 className="text-white text-4xl sc md:text-[50px] font-extrabold leading-tight mb-6">
        Straight From the Hearts of Our Team
           </h1>
 

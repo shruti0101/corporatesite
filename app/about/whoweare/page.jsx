@@ -25,7 +25,7 @@ export default function AboutPage() {
 
         <div className="px-6 md:px-12">
           <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
               We didn’t build a marketplace.
               <br />
               <span className="text-[#E67C29]">
@@ -71,7 +71,7 @@ export default function AboutPage() {
   <div className="max-w-6xl mx-auto">
 
     {/* Heading */}
-    <div className="mb-7 max-w-2xl">
+    <div className="mb-7 max-w-3xl">
    {/* Badge */}
           <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-black text-sm font-semibold tracking-wide uppercase mb-4">
        OUR ORIGIN
@@ -92,25 +92,25 @@ notebook. It became Inquiry Bazaar.
   {[
     {
       icon: Brain,
-      title: "Deep understanding of buyer behaviour",
+      title: "The learning years",
       content:
         "Deep inside India’s B2B ecosystem — studying buyer behaviour, understanding supplier pain, and mapping what actually drives inquiries.",
     },
     {
       icon: AlertTriangle,
-      title: "Suppliers losing due to poor ranking",
+      title: "The problem was clear",
       content:
         "Good suppliers were losing to average ones — not because of quality, but because of poor listing rankings and zero digital strategy.",
     },
     {
       icon: Rocket,
-      title: "Founded July 16, 2024",
+      title: "July 16, 2024 — Inquiry Bazaar is founded",
       content:
         "Promozione Branding Private Limited was incorporated with a single mission: make great suppliers findable, and help serious buyers reach them faster.",
     },
     {
       icon: RefreshCcw,
-      title: "Rebranded to Inquiry Bazaar with purpose",
+      title: "The name change that said everything",
       content:
         "When we renamed to Inquiry Bazaar, it wasn’t a rebrand. It was a declaration — every inquiry on this platform has a purpose.",
     },
@@ -165,7 +165,7 @@ notebook. It became Inquiry Bazaar.
 </section>
 
       {/* PASSION */}
-      <section className="py-24 px-6 md:px-16">
+      <section className="py-20 px-6 md:px-16">
         <div className="max-w-6xl mx-auto text-center mb-16">
 
    {/* Badge */}
@@ -178,7 +178,7 @@ notebook. It became Inquiry Bazaar.
 order but never got it.
           </h2>
 
-          <p className="text-gray-700 text-lg">
+          <p className="text-gray-800 text-md mt-2">
             We are not just building a platform. We are fighting for every MSME that ever lost a deal to a
             competitor with a better listing, not a better product. Our passion is simple and unshakeable:
             India’s manufacturers and factory owners are world-class. They just need the world to find
@@ -212,7 +212,7 @@ order but never got it.
               <h3 className="font-semibold text-xl mb-4 text-[#0B1F3A]">
                 {item.title}
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-black text-sm leading-relaxed">
                 {item.desc}
               </p>
             </div>
@@ -222,7 +222,7 @@ order but never got it.
 
       {/* QUOTE */}
       <section className="bg-[#0B1F3A] text-white py-20 px-6 md:px-16 text-center">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <p className="text-2xl font-semibold leading-relaxed mb-4">
           “Every MSME in India deserves a fair shot at the right buyer. We’re here to
 make sure ranking — not luck — decides who gets found.”
@@ -235,7 +235,7 @@ make sure ranking — not luck — decides who gets found.”
 
   {/* DIFFERENT */}
 <section className="py-15 px-6 md:px-16 ">
-  <div className="max-w-6xl mx-auto text-center">
+  <div className="max-w-7xl mx-auto text-center">
 
    {/* Badge */}
           <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-black text-sm font-semibold tracking-wide uppercase mb-6">
@@ -309,7 +309,7 @@ seen by people who are ready to buy.
               {item.title}
             </p>
 
-            <p className="text-gray-600">
+            <p className="text-gray-800 mt-3">
               {item.desc}
             </p>
           </div>
@@ -357,7 +357,7 @@ seen by people who are ready to buy.
     <div className="w-16 h-[2px] bg-[#E67C29] mx-auto mb-8"></div>
 
     {/* Content */}
-    <p className="text-white/80 text-lg leading-relaxed max-w-3xl mx-auto">
+    <p className="text-white/80 text-lg leading-relaxed max-w-6xl mx-auto">
       We believe the next wave of Indian B2B growth will come from empowered MSMEs —
       manufacturers and suppliers who have the right tools, the right visibility, and the right buyers
       knocking on their door. Inquiry Bazaar is that door.
@@ -377,7 +377,7 @@ seen by people who are ready to buy.
 
       {/* Badge */}
       <span className="inline-block px-4 py-1.5 rounded-full bg-[#E67C29]/10 text-[#E67C29] text-xs font-semibold tracking-wider uppercase mb-5">
-        WHERE WE ARE GOING
+       OUR VISION
       </span>
 
       <h2 className="text-3xl font-semibold text-[#0B1F3A] leading-tight mb-6">
@@ -386,7 +386,7 @@ seen by people who are ready to buy.
         not months.
       </h2>
 
-      <p className="text-black text-[17px] leading-relaxed max-w-4xl mx-auto">
+      <p className="text-black max-w-full text-[17px] leading-relaxed w-full ">
         We envision a future where no Indian manufacturer is invisible. Where a factory in Ludhiana
         reaches a buyer in Surat instantly. Where a fabricator in Rajkot competes on quality — not
         just on who spends more on ads. We are building the infrastructure that connects ambition
@@ -475,9 +475,7 @@ seen by people who are ready to buy.
               List your business on Inquiry Bazaar and start ranking today.
             </p>
 <a className="underline text-black text-xl" href="    www.inquirybazaar.com">www.inquirybazaar.com</a>
-            <button className="bg-[#0D2865] w-fit mx-auto mt-3 hover:bg-[#0B1F3A] text-white px-8 py-3 rounded-full transition shadow-md hover:shadow-lg">
-        Get Started
-            </button>
+          
 
           </div>
         </div>

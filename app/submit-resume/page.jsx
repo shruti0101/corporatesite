@@ -46,7 +46,7 @@ const handleSubmit = async (e) => {
 
     <>
     
-    <section className="relative w-full mt-10 h-[100vh] bg-[#1A4D6E] flex items-center overflow-hidden">
+    <section className="relative w-full mt-12 h-[80vh] bg-[#1A4D6E] flex items-center overflow-hidden">
       
       {/* Background Circles */}
       <div className="absolute right-[-100px] top-[-80px] w-[400px] h-[400px] bg-white/5 rounded-full"></div>
@@ -62,7 +62,7 @@ const handleSubmit = async (e) => {
           </span>
 
           {/* Heading */}
-          <h1 className="text-white text-4xl font-serif md:text-[70px] font-extrabold leading-tight mb-6">
+          <h1 className="text-white text-4xl sc md:text-[50px] font-extrabold leading-tight mb-6">
             Start Your Journey With <br />
             Inquiry Bazaar
           </h1>
@@ -91,7 +91,7 @@ const handleSubmit = async (e) => {
     <div className="lg:col-span-2 ">
 
       {/* Heading */}
-      <h2 className="text-[38px] md:text-[44px] font-serif text-[#1a1a1a] mb-2">
+      <h2 className="text-[38px] md:text-[44px] sc text-[#1a1a1a] mb-2">
         Tell Us About Yourself
       </h2>
       <p className="text-[#6b7280] text-[15px] mb-10">

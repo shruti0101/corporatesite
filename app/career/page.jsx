@@ -73,7 +73,7 @@ const [activeTab, setActiveTab] = useState("All");
           </span>
 
           {/* Heading */}
-          <h2 className="text-white text-4xl font-serif md:text-[50px] font-extrabold leading-tight mb-6">
+          <h2 className="text-white text-4xl sc md:text-[50px] font-extrabold leading-tight mb-6">
        Find the Role That Fits You Best
           </h2>
 

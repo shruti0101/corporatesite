@@ -80,7 +80,7 @@ const colorStyles = {
           </span>
 
           {/* Heading */}
-          <h1 className="text-white text-4xl font-serif md:text-[50px] font-extrabold leading-tight mb-6">
+          <h1 className="text-white text-4xl sc md:text-[50px] font-extrabold leading-tight mb-6">
     Your Growth Is Our Investment
           </h1>
 
@@ -124,7 +124,7 @@ const colorStyles = {
       <div className="max-w-7xl mx-auto px-4">
 
         {/* Heading */}
-        <h1 className="text-3xl md:text-5xl font-serif font-bold text-gray-900">
+        <h1 className="text-3xl md:text-5xl sc font-bold text-gray-900">
           Learning Tracks
         </h1>
         <p className="text-gray-600 mt-3 mb-8">
