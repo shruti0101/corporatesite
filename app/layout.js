@@ -20,8 +20,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${poppins.variable}`}>
       <body>
-       <LayoutWrapper/>
-        {children}</body>
+     <LayoutWrapper>{children}</LayoutWrapper>
+      </body>
     </html>
   );
 }
