@@ -57,7 +57,7 @@ const [activeTab, setActiveTab] = useState("All");
   return (
     <div>
 
-  <section className="relative mt-10  w-full h-[80vh] bg-[#1A4D6E] flex items-center overflow-hidden">
+  <section className="relative sb  w-full h-[80vh] bg-[#1A4D6E] flex items-center overflow-hidden">
       
       {/* Background Circles */}
       <div className="absolute right-[-100px] top-[-80px] w-[400px] h-[400px] bg-white/5 rounded-full"></div>

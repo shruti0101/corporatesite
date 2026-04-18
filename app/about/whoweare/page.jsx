@@ -19,7 +19,7 @@ export default function AboutPage() {
     <div className="bg-white text-gray-900">
 
       {/* HERO */}
-      <section className="relative mt-10 w-full h-[80vh] bg-[#1A4D6E] flex items-center overflow-hidden">
+      <section className="relative sb w-full h-[80vh] bg-[#1A4D6E] flex items-center overflow-hidden">
         <div className="absolute right-[-100px] top-[-80px] w-[400px] h-[400px] bg-white/5 rounded-full"></div>
         <div className="absolute right-[140px] bottom-[10px] w-[300px] h-[300px] bg-white/5 rounded-full"></div>
 

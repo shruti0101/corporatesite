@@ -88,7 +88,7 @@ export default function BlogsPage() {
 
         {/* ✅ Load More Button */}
         {visibleCount < blogs.length && (
-          <div className="text-center mt-10">
+          <div className="text-center sb">
             <button
               onClick={() => setVisibleCount((prev) => prev + 6)} // load +6 blogs each click
               className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-md shadow hover:bg-blue-700 transition"
