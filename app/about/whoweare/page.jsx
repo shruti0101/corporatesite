@@ -19,13 +19,13 @@ export default function AboutPage() {
     <div className="bg-white text-gray-900">
 
       {/* HERO */}
-      <section className="relative sb w-full h-[80vh] bg-[#1A4D6E] flex items-center overflow-hidden">
-        <div className="absolute right-[-100px] top-[-80px] w-[400px] h-[400px] bg-white/5 rounded-full"></div>
-        <div className="absolute right-[140px] bottom-[10px] w-[300px] h-[300px] bg-white/5 rounded-full"></div>
+      <section className="relative sb w-full h-[45vh]  sm:h-[50vh] md:h-[80vh] bg-[#1A4D6E] flex items-center overflow-hidden">
+        <div className="absolute right-[-100px] top-[-80px] w-[400px] h-[200px] md:h-[400px] bg-white/5 rounded-full"></div>
+        <div className="absolute right-[140px] bottom-[10px] w-[300px] h-[200px] md:h-[300px] bg-white/5 rounded-full"></div>
 
         <div className="px-6 md:px-12">
           <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
+            <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-2">
               We didn’t build a marketplace.
               <br />
               <span className="text-[#E67C29]">
@@ -33,7 +33,7 @@ export default function AboutPage() {
               </span>
             </h1>
 
-            <p className="text-xl text-white/80 leading-relaxed">
+            <p className="text:lg md:text-xl text-white/80 leading-relaxed">
               Most platforms give you a listing. We give you a rank that works.
               Inquiry Bazaar ensures the right buyer finds the right supplier —
               every single time.
@@ -43,18 +43,18 @@ export default function AboutPage() {
       </section>
 
       {/* WHO WE ARE */}
-      <section className="py-15 px-6 md:px-16">
+      <section className="py-6 px-6 md:px-16">
         <div className="max-w-5xl mx-auto text-center">
          {/* Badge */}
-          <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-black text-sm font-semibold tracking-wide uppercase mb-6">
+          <span className="inline-block px-5  py-2 rounded-full bg-yellow-400/20 text-black text-sm font-semibold tracking-wide uppercase mb-3 md:mb-6">
      WHO WE ARE
           </span>
-          <h3 className="text-4xl font-bold mb-6">
+          <h3 className="text-3xl md:text-4xl font-bold mb-3 md:mb-6">
             A growth engine for Indian suppliers
           </h3>
 
-          <div className="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
-            <p className="text-black text-lg leading-relaxed">
+          <div className="bg-white p-7 rounded-2xl shadow-md border border-gray-100">
+            <p className="text-black sm:text-sm md:text-lg leading-5 md:leading-relaxed">
               Inquiry Bazaar was founded with one obsession — making sure the right
               buyer finds the right supplier. Not just visibility, but meaningful
               discovery that leads to real business.
@@ -67,18 +67,18 @@ export default function AboutPage() {
  
 
 {/* ORIGIN — PREMIUM TIMELINE */}
-<section className="bg-[#DFE8E6] py-18 px-6 md:px-16">
+<section className="bg-[#DFE8E6] py-5 md:py-18 px-6 md:px-16">
   <div className="max-w-6xl mx-auto">
 
     {/* Heading */}
-    <div className="mb-7 max-w-3xl">
+    <div className="mb-2 md:mb-7 max-w-3xl">
    {/* Badge */}
           <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-black text-sm font-semibold tracking-wide uppercase mb-4">
        OUR ORIGIN
           </span>
-          <h2 className="text-black text-3xl font-bold mb-2"> Born from the factory floor, not a boardroom.</h2>
+          <h2 className="text-black text-2xl md:text-3xl font-bold  md:mb-2"> Born from the factory floor, not a boardroom.</h2>
     </div>
-      <p className="text-black mb-8 text-lg leading-relaxed text-3xl">
+      <p className="text-black mb-4 md:mb-8 md:text-lg leading-6 md:leading-relaxed text-xxl">
     Our founder spent years inside India’s largest B2B platform, working closely with MSMEs,
 factory owners, and manufacturers across the country. What he saw wasn’t a technology
 problem — it was a visibility problem. Thousands of genuinely capable suppliers were
@@ -132,9 +132,9 @@ notebook. It became Inquiry Bazaar.
           {/* Header */}
           <button
             onClick={() => setActiveIndex(isOpen ? null : i)}
-            className="w-full text-left p-6 flex justify-between items-center"
+            className="w-full text-left p-2 md:p-6 flex justify-between items-center"
           >
-            <p className="text-black text-xl font-bold">
+            <p className="text-black text-md md:text-xl font-bold">
               {item.title}
             </p>
 
@@ -149,7 +149,7 @@ notebook. It became Inquiry Bazaar.
               isOpen ? "max-h-40 px-6 pb-6" : "max-h-0 px-6"
             }`}
           >
-            <p className="text-black text-lg leading-relaxed">
+            <p className="text-black text-sm md:text-lg leading-relaxed">
               {item.content}
             </p>
           </div>
@@ -165,15 +165,15 @@ notebook. It became Inquiry Bazaar.
 </section>
 
       {/* PASSION */}
-      <section className="py-20 px-6 md:px-16">
-        <div className="max-w-6xl mx-auto text-center mb-16">
+      <section className="py-6 md:py-20 px-6 md:px-16">
+        <div className="max-w-6xl mx-auto text-center mb-6 md:mb-16">
 
    {/* Badge */}
-          <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-black text-sm font-semibold tracking-wide uppercase mb-6">
+          <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-black text-sm font-semibold tracking-wide uppercase mb-2 md:mb-6">
          OUR PASSION
           </span>
 
-          <h2 className="text-3xl font-bold leading-relaxed">
+          <h2 className="text-xl md:text-3xl font-bold leading-8 md:leading-relaxed">
          We lose sleep over one thing — <br /> the supplier who deserved the
 order but never got it.
           </h2>
@@ -187,7 +187,7 @@ order but never got it.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-4 md:gap-10 max-w-6xl mx-auto">
           {[
             {
               title: "Underdog FocusWe fight for the underdog supplier",
@@ -204,12 +204,12 @@ order but never got it.
           ].map((item, i) => (
             <div
               key={i}
-              className="group bg-white p-8 rounded-2xl border border-[#1C3B6D] 
+              className="group bg-white p-4 md:p-8 rounded-2xl border border-[#1C3B6D] 
               shadow-[0_10px_30px_rgba(0,0,0,0.06)] 
               hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] 
               hover:-translate-y-2 transition"
             >
-              <h3 className="font-semibold text-xl mb-4 text-[#0B1F3A]">
+              <h3 className="font-semibold text-xl mb-2 md:mb-4 text-[#0B1F3A]">
                 {item.title}
               </h3>
               <p className="text-black text-sm leading-relaxed">
@@ -221,9 +221,9 @@ order but never got it.
       </section>
 
       {/* QUOTE */}
-      <section className="bg-[#0B1F3A] text-white py-20 px-6 md:px-16 text-center">
+      <section className="bg-[#0B1F3A] text-white py-6 md:py-20 px-6 md:px-16 text-center">
         <div className="max-w-4xl mx-auto">
-          <p className="text-2xl font-semibold leading-relaxed mb-4">
+          <p className="text-xl md:text-2xl font-semibold leading-relaxed mb-4">
           “Every MSME in India deserves a fair shot at the right buyer. We’re here to
 make sure ranking — not luck — decides who gets found.”
           </p>
@@ -234,20 +234,20 @@ make sure ranking — not luck — decides who gets found.”
       </section>
 
   {/* DIFFERENT */}
-<section className="py-15 px-6 md:px-16 ">
+<section className="py-4 md:py-15 px-6 md:px-16 ">
   <div className="max-w-7xl mx-auto text-center">
 
    {/* Badge */}
-          <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-black text-sm font-semibold tracking-wide uppercase mb-6">
+          <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-black text-sm font-semibold tracking-wide uppercase mb-3 md:mb-6">
        WHAT MAKES US DIFFERENT
           </span>
 
     {/* HEADING */}
-    <h2 className="text-4xl font-bold mb-4">
+    <h2 className="text-3xl md:text-4xl font-bold mb-3 md:mb-4">
       <span className="text-[#0D2865]">Other platforms list you. We give you verified inquires.</span>
     </h2>
 
-    <p className="text-gray-800 text-lg mb-14">
+    <p className="text-gray-800 text-md md:text-lg mb-6 md:mb-14">
    At Inquiry Bazaar, your listing isn’t just a profile on a page. It’s a strategically optimised
 presence built to attract genuine buyers — not just clicks.
 We combine marketplace infrastructure with deep MSME expertise so your products get
@@ -255,7 +255,7 @@ seen by people who are ready to buy.
     </p>
 
     {/* CARDS */}
-    <div className="grid md:grid-cols-3 gap-8">
+    <div className="grid md:grid-cols-3  gap-4 md:gap-8">
 
       {[
         {
@@ -295,12 +295,12 @@ seen by people who are ready to buy.
         return (
           <div
             key={i}
-            className="bg-[#dfe8e6] backdrop-blur-md rounded-2xl px-5 py-8 
+            className="bg-[#dfe8e6] backdrop-blur-md rounded-2xl px-5 py-4 md:py-8 
             shadow-md hover:shadow-xl transition-all duration-300 
             flex flex-col items-center text-center group"
           >
             {/* ICON */}
-            <div className="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center mb-6 group-hover:scale-110 transition">
+            <div className="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition">
               <Icon className="w-6 h-6 text-[#2f5bd3]" />
             </div>
 
@@ -309,7 +309,7 @@ seen by people who are ready to buy.
               {item.title}
             </p>
 
-            <p className="text-gray-800 mt-3">
+            <p className="text-gray-800 mt-1 md:mt-3">
               {item.desc}
             </p>
           </div>
@@ -325,7 +325,7 @@ seen by people who are ready to buy.
 
 
     {/* CTA */}
-    <div className="mt-16">
+    <div className="mt-5 md:mt-16">
       <button className="px-8 py-3 rounded-full text-white font-semibold 
      bg-[#0D2865]  shadow-md hover:shadow-lg transition">
   
@@ -340,24 +340,24 @@ seen by people who are ready to buy.
 
 
 {/* OUR MISSION */}
-<section className="py-24 px-6 md:px-16 bg-[#0B1F3A]">
+<section className="py-6 md:py-24 px-6 md:px-16 bg-[#0B1F3A]">
   <div className="max-w-5xl mx-auto text-center">
 
     {/* Badge */}
-    <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-white text-xs font-semibold tracking-wider uppercase mb-6">
+    <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-white text-xs font-semibold tracking-wider uppercase mb-4 md:mb-6">
       OUR MISSION
     </span>
 
     {/* Heading */}
-    <h2 className="text-4xl md:text-5xl font-semibold text-white leading-tight mb-6">
+    <h2 className="text-3xl md:text-5xl font-semibold text-white leading-tight mb-4 md:mb-6">
       Turning India’s hidden suppliers into India’s preferred suppliers.
     </h2>
 
     {/* Divider */}
-    <div className="w-16 h-[2px] bg-[#E67C29] mx-auto mb-8"></div>
+    <div className="w-16 h-[2px] bg-[#E67C29] mx-auto mb-3 md:mb-8"></div>
 
     {/* Content */}
-    <p className="text-white/80 text-lg leading-relaxed max-w-6xl mx-auto">
+    <p className="text-white/80 text-md md:text-lg leading-relaxed max-w-6xl mx-auto">
       We believe the next wave of Indian B2B growth will come from empowered MSMEs —
       manufacturers and suppliers who have the right tools, the right visibility, and the right buyers
       knocking on their door. Inquiry Bazaar is that door.
@@ -369,24 +369,24 @@ seen by people who are ready to buy.
 
 
 {/* WHERE WE ARE GOING */}
-<section className="py-15 px-6 md:px-16 bg-white">
+<section className="py-6 md:py-15 px-6 md:px-16 bg-white">
   <div className="max-w-7xl mx-auto">
 
     {/* TOP TEXT */}
-    <div className="max-w-5xl mx-auto text-center mb-20">
+    <div className="max-w-5xl mx-auto text-center mb-7 md:mb-20">
 
       {/* Badge */}
-      <span className="inline-block px-4 py-1.5 rounded-full bg-[#E67C29]/10 text-[#E67C29] text-xs font-semibold tracking-wider uppercase mb-5">
+      <span className="inline-block px-4 py-1.5 rounded-full bg-[#E67C29]/10 text-[#E67C29] text-xs font-semibold tracking-wider uppercase mb-3 md:mb-5">
        OUR VISION
       </span>
 
-      <h2 className="text-3xl font-semibold text-[#0B1F3A] leading-tight mb-6">
+      <h2 className="text-2xl md:text-3xl font-semibold text-[#0B1F3A] leading-tight mb-3 md:mb-6">
         To become India’s most trusted B2B discovery platform —
         where every serious buyer finds the right supplier in minutes,
         not months.
       </h2>
 
-      <p className="text-black max-w-full text-[17px] leading-relaxed w-full ">
+      <p className="text-black max-w-full text-[16px]  leading-relaxed w-full ">
         We envision a future where no Indian manufacturer is invisible. Where a factory in Ludhiana
         reaches a buyer in Surat instantly. Where a fabricator in Rajkot competes on quality — not
         just on who spends more on ads. We are building the infrastructure that connects ambition
@@ -396,10 +396,10 @@ seen by people who are ready to buy.
     </div>
 
     {/* CARDS */}
-    <div className="grid md:grid-cols-3 gap-10">
+    <div className="grid md:grid-cols-3 gap-4 md:gap-10">
 
       {/* CARD 1 */}
-      <div className="group relative p-8 rounded-2xl bg-white border border-gray-300 
+      <div className="group relative p-4 md:p-8 rounded-2xl bg-white border border-gray-300 
         shadow-[0_10px_40px_rgba(0,0,0,0.05)] 
         hover:shadow-[0_25px_80px_rgba(0,0,0,0.1)] 
         transition-all duration-500 hover:-translate-y-2">
@@ -407,7 +407,7 @@ seen by people who are ready to buy.
         {/* Top Accent Line */}
         <div className="absolute top-0 left-0 w-full h-[3px] bg-[#E67C29] rounded-t-2xl opacity-0 group-hover:opacity-100 transition"></div>
 
-        <p className="text-md font-semibold text-[#E67C29] mb-4 tracking-wide">
+        <p className="text-md font-semibold text-[#E67C29] mb-1 md:mb-4 tracking-wide">
           → Pan-India reach
         </p>
 
@@ -418,14 +418,14 @@ seen by people who are ready to buy.
       </div>
 
       {/* CARD 2 */}
-      <div className="group relative p-8 rounded-2xl bg-white border border-gray-300 
+      <div className="group relative p-4 md:p-8 rounded-2xl bg-white border border-gray-300 
         shadow-[0_10px_40px_rgba(0,0,0,0.05)] 
         hover:shadow-[0_25px_80px_rgba(0,0,0,0.1)] 
         transition-all duration-500 hover:-translate-y-2">
 
         <div className="absolute top-0 left-0 w-full h-[3px] bg-[#E67C29] rounded-t-2xl opacity-0 group-hover:opacity-100 transition"></div>
 
-        <p className="text-md font-semibold text-[#E67C29] mb-4 tracking-wide">
+        <p className="text-md font-semibold text-[#E67C29] mb-1 md:mb-4 tracking-wide">
           → Smarter discovery
         </p>
 
@@ -436,14 +436,14 @@ seen by people who are ready to buy.
       </div>
 
       {/* CARD 3 */}
-      <div className="group relative p-8 rounded-2xl bg-white border border-gray-300 
+      <div className="group relative p-4 md:p-8 rounded-2xl bg-white border border-gray-300 
         shadow-[0_10px_40px_rgba(0,0,0,0.05)] 
         hover:shadow-[0_25px_80px_rgba(0,0,0,0.1)] 
         transition-all duration-500 hover:-translate-y-2">
 
         <div className="absolute top-0 left-0 w-full h-[3px] bg-[#E67C29] rounded-t-4xl opacity-0 group-hover:opacity-100 transition"></div>
 
-        <p className="text-md font-semibold text-[#E67C29] mb-4 tracking-wide">
+        <p className="text-md font-semibold text-[#E67C29] mb-1 md:mb-4 tracking-wide">
           → MSME empowerment
         </p>
 
@@ -463,15 +463,15 @@ seen by people who are ready to buy.
 
 
       {/* CTA */}
-      <section className="bg-[#F7F6F2]   py-20 px-6 md:px-16">
+      <section className="bg-[#F7F6F2] py-8  md:py-20 px-6 md:px-16">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white flex flex-col rounded-2xl p-12 text-center shadow-[0_20px_60px_rgba(0,0,0,0.08)] border border-gray-100">
+          <div className="bg-white flex flex-col rounded-2xl p-6 md:p-12 text-center shadow-[0_20px_60px_rgba(0,0,0,0.08)] border border-gray-100">
             
-            <h2 className="text-3xl font-bold mb-4">
+            <h2 className="text-3xl font-bold mb-2 md:mb-4">
               Ready to stop being invisible?
             </h2>
 
-            <p className="text-black text-lg mb-5">
+            <p className="text-black text-md md:text-lg mb-3 md:mb-5">
               List your business on Inquiry Bazaar and start ranking today.
             </p>
 <a className="underline text-black text-xl" href="    www.inquirybazaar.com">www.inquirybazaar.com</a>
