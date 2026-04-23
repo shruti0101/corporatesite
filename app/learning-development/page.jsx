@@ -3,6 +3,7 @@
 import React from "react";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
+import Link from "next/link";
 const page = () => {
   const stats = [
     { value: "94%", label: "Employee Satisfaction" },
@@ -20,12 +21,12 @@ const page = () => {
       color: "blue",
       content:
         "A structured 90-day journey that helps new joiners hit the ground running. You'll meet leaders, shadow teams, and complete essential certifications.",
-      points:[
+      points: [
         "IB Culture & Values Orientation (Week 1)",
         "Role-specific Tool Training (Week 2–3)",
         "Cross-functional Team Shadowing (Month 1–2)",
-        "90-Day Check-in & Goal Setting (Month 3)"
-      ]
+        "90-Day Check-in & Goal Setting (Month 3)",
+      ],
     },
     {
       title: "Functional Skills Development",
@@ -35,13 +36,13 @@ const page = () => {
       color: "green",
       content:
         "Domain-specific learning paths designed with input from industry experts and senior leaders. Includes both live workshops and self-paced modules.",
-      points:[
+      points: [
         "Advanced Excel & Data Analytics for Non-Tech Roles",
         "Solution Selling & Consultative Sales Techniques",
         "Agile & Scrum Fundamentals for Engineers",
         "Digital Marketing Certification (Google, Meta)",
-        "Financial Acumen for Business Professionals"
-      ]
+        "Financial Acumen for Business Professionals",
+      ],
     },
     {
       title: "Leadership Accelerator Programme",
@@ -51,13 +52,12 @@ const page = () => {
       color: "yellow",
       content:
         "An intensive 6-month programme for top performers. Combines executive coaching, cross-functional projects, and leadership simulations with senior mentors.",
-      points:[
+      points: [
         "Strategic Thinking & Business Acumen Workshop",
         "People Management & Conflict Resolution",
         "Executive Presence & Communication Masterclass",
-        "Capstone Project: Present to the Leadership Team"
-
-      ]
+        "Capstone Project: Present to the Leadership Team",
+      ],
     },
     {
       title: "External Certifications & Courses",
@@ -67,14 +67,14 @@ const page = () => {
       color: "red",
       content:
         "We sponsor up to ₹40,000 per employee per year for external learning. Employees simply apply, get approved, and learn — with no strings attached.",
-      points:[
+      points: [
         "PMP / PRINCE2 Project Management Certification",
         "AWS / GCP / Azure Cloud Certifications",
         "MBA / PGDM Tuition Assistance (Partial)",
-        "Language & Communication Courses"
-      ]
+        "Language & Communication Courses",
+      ],
     },
-     {
+    {
       title: "Wellbeing & Soft Skills",
       desc: "Because a healthy mind drives peak performance",
       tag: "Sponsored",
@@ -82,12 +82,12 @@ const page = () => {
       color: "red",
       content:
         "We believe great professionals are well-rounded humans. Our soft skills and wellbeing track helps every employee show up as their best self.",
-      points:[
+      points: [
         "Mindfulness & Stress Management Sessions",
         "Effective Communication & Presentation Skills",
         "Time Management & Personal Productivity",
-        "Unconscious Bias & Inclusive Workplace Training"
-      ]
+        "Unconscious Bias & Inclusive Workplace Training",
+      ],
     },
   ];
 
@@ -171,76 +171,121 @@ const page = () => {
 
               return (
                 <div
-  key={index}
-  className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden"
->
-  {/* Header */}
-  <div
-    onClick={() => toggle(index)}
-    className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 cursor-pointer hover:bg-gray-50 transition"
-  >
-    {/* LEFT SIDE */}
-    <div className="flex items-start sm:items-center gap-3 sm:gap-4">
-      
-      {/* Icon */}
-      <div
-        className={`w-10 h-10 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center text-base sm:text-lg ${color.bg}`}
-      >
-        {item.icon}
-      </div>
+                  key={index}
+                  className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden"
+                >
+                  {/* Header */}
+                  <div
+                    onClick={() => toggle(index)}
+                    className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 cursor-pointer hover:bg-gray-50 transition"
+                  >
+                    {/* LEFT SIDE */}
+                    <div className="flex items-start sm:items-center gap-3 sm:gap-4">
+                      {/* Icon */}
+                      <div
+                        className={`w-10 h-10 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center text-base sm:text-lg ${color.bg}`}
+                      >
+                        {item.icon}
+                      </div>
 
-      {/* Text */}
-      <div>
-        <h3 className="font-semibold text-gray-900 text-sm sm:text-base leading-snug">
-          {item.title}
-        </h3>
-        <p className="text-xs sm:text-sm text-gray-500 mt-1 leading-snug">
-          {item.desc}
-        </p>
-      </div>
-    </div>
+                      {/* Text */}
+                      <div>
+                        <h3 className="font-semibold text-gray-900 text-sm sm:text-base leading-snug">
+                          {item.title}
+                        </h3>
+                        <p className="text-xs sm:text-sm text-gray-500 mt-1 leading-snug">
+                          {item.desc}
+                        </p>
+                      </div>
+                    </div>
 
-    {/* RIGHT SIDE */}
-    <div className="flex items-center justify-between sm:justify-end gap-3 w-full sm:w-auto">
-      
-      <span
-        className={`text-[10px] sm:text-xs font-semibold px-2 sm:px-3 py-1 rounded-full ${color.bg} ${color.text}`}
-      >
-        {item.tag}
-      </span>
+                    {/* RIGHT SIDE */}
+                    <div className="flex items-center justify-between sm:justify-end gap-3 w-full sm:w-auto">
+                      <span
+                        className={`text-[10px] sm:text-xs font-semibold px-2 sm:px-3 py-1 rounded-full ${color.bg} ${color.text}`}
+                      >
+                        {item.tag}
+                      </span>
 
-      <ChevronDown
-        className={`w-4 h-4 sm:w-5 sm:h-5 text-gray-400 transition-transform duration-300 ${
-          isOpen ? "rotate-180" : ""
-        }`}
-      />
-    </div>
-  </div>
+                      <ChevronDown
+                        className={`w-4 h-4 sm:w-5 sm:h-5 text-gray-400 transition-transform duration-300 ${
+                          isOpen ? "rotate-180" : ""
+                        }`}
+                      />
+                    </div>
+                  </div>
 
-  {/* Content */}
-  <div
-    className={`px-4 sm:px-5 transition-all duration-300 ease-in-out ${
-      isOpen ? "max-h-[300px] py-3 sm:py-4" : "max-h-0 overflow-hidden"
-    }`}
-  >
-    <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-2">
-      {item.content}
-    </p>
+                  {/* Content */}
+                  <div
+                    className={`px-4 sm:px-5 transition-all duration-300 ease-in-out ${
+                      isOpen
+                        ? "max-h-[300px] py-3 sm:py-4"
+                        : "max-h-0 overflow-hidden"
+                    }`}
+                  >
+                    <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-2">
+                      {item.content}
+                    </p>
 
-    <ul className="space-y-1">
-      {item.points.map((point, i) => (
-        <li key={i} className="text-xs sm:text-sm text-gray-700">
-          <span className="font-bold text-lg">•</span> {point}
-        </li>
-      ))}
-    </ul>
-  </div>
-</div>
+                    <ul className="space-y-1">
+                      {item.points.map((point, i) => (
+                        <li
+                          key={i}
+                          className="text-xs sm:text-sm text-gray-700"
+                        >
+                          <span className="font-bold text-lg">•</span> {point}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
               );
             })}
           </div>
         </div>
       </div>
+
+      <section className="py-6 md:py-12 px-4 sm:px-6 md:px-12">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* CARD 1 */}
+          <div className="bg-[#1A4D6E]  text-white rounded-2xl p-6 sm:p-8">
+            <h3 className="font-serif font-bold text-xl sm:text-2xl mb-3">
+              Ready to apply?
+            </h3>
+
+            <p className="text-white text-sm sm:text-base mb-5">
+              Explore our open roles and take the first step toward a rewarding
+              career at Inquiry Bazaar.
+            </p>
+
+            <Link
+             href={"/career"}
+              className="border border-white/50 text-white px-4 py-2 rounded-md text-sm hover:bg-white/10 transition"
+            >
+              View Open Roles →
+            </Link>
+          </div>
+
+          {/* CARD 2 */}
+          <div className="bg-teal-100/50 rounded-2xl p-6 sm:p-8">
+            <h3 className="font-bold font-serif text-xl sm:text-2xl mb-3">
+              Have questions?
+            </h3>
+
+            <p className="text-black text-sm sm:text-base mb-5">
+              Our People &amp; Culture team is happy to answer any questions
+              about learning programmes or career growth.
+            </p>
+
+            <a
+              href="mailto:learning@inquirybazaar.com"
+              className="text-[var(--teal)] font-semibold text-sm sm:text-base hover:underline"
+            >
+              learning@inquirybazaar.com →
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
