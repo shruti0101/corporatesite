@@ -34,19 +34,19 @@ export default function BlogsPage() {
       {/* Hero Section */}
       <section
         style={{ backgroundImage: "url('/testimonialbg.webp')" }}
-        className="w-full bg-cover h-[50vh] md:h-[70vh] -rotate-180 relative"
+        className="w-full bg-cover h-[30vh] md:h-[70vh] -rotate-180 relative"
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="absolute inset-0 flex flex-col items-center justify-center">
            <p className="text-cyan-500 text-lg rotate-180">Home / Blogs</p>
-          <h2 className="text-white text-6xl font-bold z-10 rotate-180">
+          <h2 className="text-white text-5xl md:text-6xl font-bold z-10 rotate-180">
             Our Blogs
           </h2>
         </div>
       </section>
 
       {/* Blog Listing */}
-      <div className="max-w-7xl mx-auto px-6 py-12">
+      <div className="max-w-7xl mx-auto px-6 py-6 md:py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogs.slice(0, visibleCount).map((b) => (
             <article
@@ -62,9 +62,9 @@ export default function BlogsPage() {
                   className="w-full h-48 object-cover rounded-t-lg"
                 />
               )}
-              <div className="p-4">
-                <h2 className="text-lg font-semibold mb-2">{b.title}</h2>
-                <p className="text-sm text-gray-500 mb-3">
+              <div className="p-3 md:p-4">
+                <h2 className="text-lg font-semibold mb-1 md:mb-2">{b.title}</h2>
+                <p className="text-sm text-gray-500 mb-2 md:mb-3">
                   {b.date
                     ? new Date(b.date).toLocaleDateString("en-US", {
                         year: "numeric",

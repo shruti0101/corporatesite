@@ -46,7 +46,7 @@ const handleSubmit = async (e) => {
 
     <>
     
-    <section className="relative w-full mt-12 h-[80vh] bg-[#1A4D6E] flex items-center overflow-hidden">
+    <section className="relative w-full h-[50vh] sm:h[45vh]  md:h-[80vh] bg-[#1A4D6E] flex items-center overflow-hidden">
       
       {/* Background Circles */}
       <div className="absolute right-[-100px] top-[-80px] w-[400px] h-[400px] bg-white/5 rounded-full"></div>
@@ -57,18 +57,18 @@ const handleSubmit = async (e) => {
         <div className="max-w-4xl">
           
           {/* Badge */}
-          <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-yellow-400 text-sm font-semibold tracking-wide uppercase mb-6">
+          <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-yellow-400 text-sm font-semibold tracking-wide uppercase mb-3 md:mb-6">
             Join Our Team
           </span>
 
           {/* Heading */}
-          <h1 className="text-white text-4xl sc md:text-[50px] font-extrabold leading-tight mb-6">
+          <h1 className="text-white text-4xl sc md:text-[50px] font-extrabold leading-tight mb-4 md:mb-6">
             Start Your Journey With <br />
             Inquiry Bazaar
           </h1>
 
           {/* Description */}
-          <p className="text-white/80 text-2xl leading-relaxed max-w-2xl">
+          <p className="text-white/80 text-lg md:text-2xl leading-7 md:leading-relaxed max-w-2xl">
             Share your resume and our talent team will match you with the right
             opportunity. We believe every great career begins with a conversation.
           </p>
@@ -84,17 +84,17 @@ const handleSubmit = async (e) => {
 
 
 
-<section className="bg-[#f3f1ec] py-20 px-4 md:px-10">
+<section className="bg-[#f3f1ec] py-6 md:py-20 px-4 md:px-10">
   <div className="max-w-7xl  mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12">
 
     {/* LEFT SIDE */}
     <div className="lg:col-span-2 ">
 
       {/* Heading */}
-      <h2 className="text-[38px] md:text-[44px] sc text-[#1a1a1a] mb-2">
+      <h2 className="text-[30px] md:text-[44px] sc text-[#1a1a1a] mb-2">
         Tell Us About Yourself
       </h2>
-      <p className="text-[#6b7280] text-[15px] mb-10">
+      <p className="text-[#6b7280] text-[15px] mb-4 md:mb-10">
         Fill in your details below — takes less than 5 minutes.
       </p>
 
@@ -281,49 +281,49 @@ const handleSubmit = async (e) => {
     </div>
 
     {/* RIGHT SIDE */}
-    <div className="space-y-6">
+    <div className= " space-y-4 md:space-y-6">
 
       {/* CARD 1 */}
-      <div className="bg-white border border-[#e5e2dc] rounded-2xl p-6">
+      <div className="bg-white border border-[#e5e2dc] rounded-2xl p-4 md:p-6">
         <div className="w-10 h-10 bg-[#e7eef5] rounded-lg flex items-center justify-center mb-4">
           ⚡
         </div>
         <h4 className="text-[16px] font-semibold text-[#1a1a1a]">
           Quick & Easy
         </h4>
-        <p className="text-[14px] text-gray-500 mt-2">
+        <p className="text-[14px] text-gray-500  mt-1 md:mt-2">
           Our streamlined process ensures your profile reaches the right hiring manager within 48 hours.
         </p>
       </div>
 
       {/* CARD 2 */}
-      <div className="bg-white border border-[#e5e2dc] rounded-2xl p-6">
+      <div className="bg-white border border-[#e5e2dc] rounded-2xl p-4 md:p-6">
         <div className="w-10 h-10 bg-[#f4efe6] rounded-lg flex items-center justify-center mb-4">
           🔒
         </div>
         <h4 className="text-[16px] font-semibold text-[#1a1a1a]">
           100% Confidential
         </h4>
-        <p className="text-[14px] text-gray-500 mt-2">
+        <p className="text-[14px] text-gray-500  mt-1 md:mt-2">
           Your information is handled with strict privacy. We never share your data without your consent.
         </p>
       </div>
 
       {/* CARD 3 */}
-      <div className="bg-white border border-[#e5e2dc] rounded-2xl p-6">
-        <div className="w-10 h-10 bg-[#e9f0ee] rounded-lg flex items-center justify-center mb-4">
+      <div className="bg-white border border-[#e5e2dc] rounded-2xl p-4 md:p-6">
+        <div className="w-10 h-10 bg-[#e9f0ee] rounded-lg flex items-center justify-center mb-3 md:mb-4">
           💬
         </div>
         <h4 className="text-[16px] font-semibold text-[#1a1a1a]">
           Personalized Response
         </h4>
-        <p className="text-[14px] text-gray-500 mt-2">
+        <p className="text-[14px] text-gray-500 mt-1 md:mt-2">
           Every submission gets reviewed by a real person — no bots, no automated rejections.
         </p>
       </div>
 
       {/* CONTACT */}
-      <div className="bg-[#1f4f6b] text-white p-6 rounded-2xl">
+      <div className="bg-[#1f4f6b] text-white p-4 md:p-6 rounded-2xl">
         <p className="text-sm opacity-80">Need help?</p>
         <h4 className="text-lg font-semibold mt-1 mb-3">
           Talk to our HR team
