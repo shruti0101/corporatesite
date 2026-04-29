@@ -7,6 +7,7 @@ import Link from "next/link";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Briefcase, FileText, Gift, Handshake } from "lucide-react";
+import Clientele from "@/components/landingpage/Clientele";
 import { motion } from "framer-motion";
 import { ShoppingCart, Users, Package } from "lucide-react";
 import Image from "next/image";
@@ -375,7 +376,7 @@ export default function HeroSection() {
 
       </div>
     </section>
-
+<Clientele></Clientele>
 
      <section className="relative w-full py-20 overflow-hidden">
 

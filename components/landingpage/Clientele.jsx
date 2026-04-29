@@ -8,22 +8,24 @@ import "swiper/css/grid";
 
 export default function BrandSection() {
   const logos = [
-    "/brands/delta.png",
-    "/brands/caterpillar.png",
-    "/brands/danfoss.png",
-    "/brands/mahindra.png",
-    "/brands/tata.png",
-    "/brands/jsw.png",
-    "/brands/godrej.png",
-    "/brands/konica.png",
-    "/brands/weber.png",
-    "/brands/panther.png",
-      "/brands/tata.png",
-    "/brands/jsw.png",
-    "/brands/godrej.png",
-    "/brands/konica.png",
-    "/brands/weber.png",
-    "/brands/panther.png",
+    "/clientimages/1.webp",
+    "/clientimages/2.webp",
+    "/clientimages/3.png",
+    "/clientimages/4.webp",
+    "/clientimages/5.webp",
+    "/clientimages/6.webp",
+    "/clientimages/7.png",
+    "/clientimages/8.webp",
+    "/clientimages/9.png",
+    "/clientimages/10.webp",
+      "/clientimages/11.webp",
+    "/clientimages/12.webp",
+    "/clientimages/13.webp",
+     "/clientimages/14.webp",
+      "/clientimages/15.webp",
+          "/clientimages/16.png",
+              "/clientimages/17.jpg",
+               "/clientimages/18.webp",
   ];
 
   return (
@@ -69,11 +71,11 @@ export default function BrandSection() {
         >
           {logos.map((logo, i) => (
             <SwiperSlide key={i}>
-              <div className="flex items-center justify-center h-[80px]">
+              <div className="flex items-center justify-center h-[130px]">
                 <img
                   src={logo}
                   alt="brand"
-                  className="h-[40px] object-contain opacity-80 hover:opacity-100 transition"
+                  className="h-[70px] object-cover   transition"
                 />
               </div>
             </SwiperSlide>
