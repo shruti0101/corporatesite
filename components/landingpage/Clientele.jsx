@@ -75,7 +75,7 @@ export default function BrandSection() {
                 <img
                   src={logo}
                   alt="brand"
-                  className="h-[70px] object-cover   transition"
+                  className="h-[60px] object-cover   transition"
                 />
               </div>
             </SwiperSlide>
