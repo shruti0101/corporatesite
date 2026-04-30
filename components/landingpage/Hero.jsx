@@ -14,45 +14,44 @@ import Image from "next/image";
 
 export default function HeroSection() {
 
- const tabs = [
-    {
-      id: "openings",
-      title: "CURRENT OPENINGS",
-      icon: <Briefcase />,
-      heading: "CURRENT OPENINGS",
-      desc: "Explore job opportunities across multiple domains like sales, tech, marketing and more.",
-      btn: "View Open Positions",
-      link:"/career"
-    },
-    {
-      id: "resume",
-      title: "SUBMIT YOUR RESUME",
-      icon: <FileText />,
-      heading: "SUBMIT YOUR RESUME",
-      desc: "Share your profile with us and get noticed by our hiring team.",
-      btn: "Submit Resume",
-      link:"/submit-resume"
-    },
-    {
-      id: "employee",
-      title: "EMPLOYEE SPEAKS",
-      icon: <Gift />,
-      heading: "EMPLOYEE SPEAKS",
-      desc: "Enjoy amazing benefits, flexible culture and growth-focused environment.",
-      btn: "Explore Benefits",
-      link:"/employee-speaks"
-
-    },
-    {
-      id: "learning",
-      title: "LEARNING & DEVELOPMENT",
-      icon: <Handshake />,
-      heading: "LEARNING & DEVELOPMENT",
-      desc: "Collaborate with us and grow your business with our strong network.",
-      btn: "Become Partner",
-      link:"/learning-development"
-    },
-  ];
+const tabs = [
+  {
+    id: "openings",
+    title: "CURRENT OPENINGS",
+    icon: <Briefcase />,
+    heading: "CURRENT OPENINGS",
+    desc: "Explore exciting career opportunities across multiple domains including sales, technology, marketing, and operations. Join a fast-growing team where your skills are valued, your ideas matter, and your career growth is a priority.",
+    btn: "View Open Positions",
+    link: "/career",
+  },
+  {
+    id: "resume",
+    title: "SUBMIT YOUR RESUME",
+    icon: <FileText />,
+    heading: "SUBMIT YOUR RESUME",
+    desc: "Didn’t find a suitable role? No worries. Share your profile with us and our hiring team will review it for current and future opportunities. We’re always looking for passionate and talented individuals to join us.",
+    btn: "Submit Resume",
+    link: "/submit-resume",
+  },
+  {
+    id: "employee",
+    title: "EMPLOYEE SPEAKS",
+    icon: <Gift />,
+    heading: "EMPLOYEE SPEAKS",
+    desc: "Discover what it’s like to work with us through real stories from our employees. Experience a culture built on collaboration, flexibility, recognition, and continuous growth that empowers you to do your best work.",
+    btn: "Explore Benefits",
+    link: "/employee-speaks",
+  },
+  {
+    id: "learning",
+    title: "LEARNING & DEVELOPMENT",
+    icon: <Handshake />,
+    heading: "LEARNING & DEVELOPMENT",
+    desc: "We invest in your growth with continuous learning programs, mentorship, and hands-on experience. Enhance your skills, stay ahead in your field, and build a rewarding career with our supportive environment.",
+    btn: "Become Partner",
+    link: "/learning-development",
+  },
+];
 
   const slides = [
     {
@@ -130,7 +129,7 @@ export default function HeroSection() {
         navigation
         autoplay={{ delay: 4000 }}
         loop
-        className="h-[65vh] md:h-[70vh]"
+        className="h-[50vh] md:h-[70vh]"
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
@@ -176,7 +175,7 @@ export default function HeroSection() {
       </Swiper>
 
       {/* STATS CARDS */}
-      <div className=" absolute bottom-20 w-full px-4 md:px-20 z-30">
+      <div className="hidden md:block absolute bottom-20 w-full px-4 md:px-20 z-30">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
           {/* CARD 1 */}
@@ -210,36 +209,14 @@ export default function HeroSection() {
       </div>
 
       {/* EXTRA SPACE BELOW (for overlap) */}
-      <div className="h-24 md:h-32"></div>
+      <div className="h-15 md:h-32"></div>
     </div>
 
 
-     <section className="w-full py-5 bg-white">
+     <section className="w-full pb-4 bg-white">
       <div className="w-full mx-auto px-4 md:px-25 grid md:grid-cols-2 gap-12 items-center">
 
-        {/* IMAGE SIDE */}
-        <motion.div
-          initial={{ opacity: 0, x: -40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="relative"
-        >
-          <div className="relative w-full h-[300px] md:h-[450px] rounded-2xl overflow-hidden shadow-xl">
-            <Image
-              src="/test.png" // 👉 replace with your image
-              alt="About Us"
-              fill
-              className="object-cover"
-            />
-          </div>
-
-          {/* subtle overlay card */}
-          <div className="absolute -bottom-6 -right-6 bg-white shadow-lg rounded-xl px-6 py-4 hidden md:block">
-            <p className="text-sm text-gray-500">Trusted by</p>
-            <h3 className="text-xl font-bold">10,000+ Customers</h3>
-          </div>
-        </motion.div>
+    
 
         {/* TEXT SIDE */}
         <motion.div
@@ -293,6 +270,30 @@ export default function HeroSection() {
           <button className="bg-[#F1791C] hover:bg-[#F1791C] text-white px-6 py-3 rounded-lg font-medium transition">
             Learn More →
           </button>
+        </motion.div>
+
+            {/* IMAGE SIDE */}
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="relative"
+        >
+          <div className="relative w-full h-[300px] md:h-[450px] rounded-2xl overflow-hidden shadow-xl">
+            <Image
+              src="/test.png" // 👉 replace with your image
+              alt="About Us"
+              fill
+              className="object-cover"
+            />
+          </div>
+
+          {/* subtle overlay card */}
+          <div className="absolute -bottom-6 -right-6 bg-white shadow-lg rounded-xl px-6 py-4 hidden md:block">
+            <p className="text-sm text-gray-500">Trusted by</p>
+            <h3 className="text-xl font-bold">10,000+ Customers</h3>
+          </div>
         </motion.div>
 
       </div>
@@ -394,7 +395,7 @@ export default function HeroSection() {
           transition={{ duration: 0.4 }}
         >
           <p className="text-[#F1791C] font-semibold mb-2 uppercase">
-            Life At TissueKart
+            Life At InquiryBazaar
           </p>
 
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">

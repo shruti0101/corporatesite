@@ -44,12 +44,11 @@ export default function Footer() {
         {/* Column 2 */}
         <div className="space-y-3">
           <p>Help</p>
-          <p>Feedback</p>
-          <p>Complaint</p>
-          <p>Customer Care</p>
-          <p>Contact Us</p>
-          <p>Enterprise Solution</p>
-          <p>Jobs & Careers</p>
+          <p>FAQs</p>
+          <p>Privacy Policy</p>
+          <p>Terms & Conditions</p>
+          <p>Write to Management</p>  
+       
         </div>
 
         {/* Column 3 */}
@@ -71,10 +70,11 @@ export default function Footer() {
 
         {/* Column 5 */}
         <div className="space-y-3">
-          <p className="font-semibold text-gray-800">Accounting Solutions</p>
-          <p>Accounting Software</p>
-          <p>Tally On Mobile</p>
-          <p>GST E-Invoice</p>
+          <p className="font-semibold text-gray-800">Sister Site</p>
+          <p>Promozione Branding</p>
+          <p>Promotion Branding</p>
+          <p>Promote Bharat</p>
+          <p>Top 10 Digital Marketing Agency</p>
         </div>
       </div>
 

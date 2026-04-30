@@ -12,10 +12,10 @@ export default function BrandSection() {
     "/clientimages/2.webp",
     "/clientimages/3.png",
     "/clientimages/4.webp",
-    "/clientimages/5.webp",
+    "/clientimages/5.png",
     "/clientimages/6.webp",
     "/clientimages/7.png",
-    "/clientimages/8.webp",
+    "/clientimages/8.png",
     "/clientimages/9.png",
     "/clientimages/10.webp",
       "/clientimages/11.webp",
@@ -24,7 +24,7 @@ export default function BrandSection() {
      "/clientimages/14.webp",
       "/clientimages/15.webp",
           "/clientimages/16.png",
-              "/clientimages/17.jpg",
+              "/clientimages/17.png",
                "/clientimages/18.webp",
   ];
 
