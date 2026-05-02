@@ -17,7 +17,7 @@ export default function AboutPage() {
   return (
     <div className="bg-white text-gray-900">
       {/* HERO */}
-      <section className="relative sb w-full h-[50svh]  sm:h-[50vh] md:h-[70vh] lg:h-[80vh] bg-[#1A4D6E] flex items-center overflow-hidden">
+      <section className="relative sb w-full h-[50svh]  sm:h-[50vh] md:h-[40vh] lg:h-[70vh] bg-[#1A4D6E] flex items-center overflow-hidden">
         <div className="absolute right-[-100px] top-[-80px] w-[400px] h-[200px] md:h-[400px] bg-white/5 rounded-full"></div>
         <div className="absolute right-[140px] bottom-[10px] w-[300px] h-[200px] md:h-[300px] bg-white/5 rounded-full"></div>
 
