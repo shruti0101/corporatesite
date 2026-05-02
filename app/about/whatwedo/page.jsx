@@ -176,7 +176,7 @@ export default function WhatWeDo() {
           Tradational Market Place
         </th>
 
-        <th className="px-3 py-4 text-[15px] font-semibold text-center bg-[#0a3f80]">
+        <th className="px-3w py-4 text-[15px] font-semibold text-center bg-[#0a3f80]">
           Inquiry Bazaar
         </th>
       </tr>
