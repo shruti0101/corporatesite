@@ -91,12 +91,12 @@ export default async function BlogDetail({ params }) {
 
   return (
     <>
-      {/* HERO */}
+      {/* HERO */}  
       <section
-        style={{ backgroundImage: "url('/testimonialbg.webp')" }}
-        className="relative h-[50vh] md:h-[80vh] bg-center bg-cover overflow-hidden"
+      
+        className="relative h-[50vh] md:h-[80vh] bg-[#1A4D6E]  overflow-hidden"
       >
-        <div className="absolute inset-0 bg-black/40 z-[1]"></div>
+    
 
         <h1 className="relative z-[2] text-white text-center max-w-3xl px-3 mx-auto text-2xl md:text-4xl font-bold flex items-center justify-center h-full">
           {blog.title}

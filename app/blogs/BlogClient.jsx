@@ -33,13 +33,13 @@ export default function BlogsPage() {
     <>
       {/* Hero Section */}
       <section
-        style={{ backgroundImage: "url('/testimonialbg.webp')" }}
-        className="w-full bg-cover h-[30vh] md:h-[40vh] -rotate-180 relative"
+    
+        className="w-full bg-[#1A4D6E] h-[30vh] md:h-[70vh]  relative"
       >
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+     
         <div className="absolute inset-0 flex flex-col items-center justify-center">
-           <p className="text-cyan-500 text-lg rotate-180">Home / Blogs</p>
-          <h2 className="text-white text-5xl md:text-6xl font-bold z-10 rotate-180">
+           <p className="text-[#F28A3A] text-lg ">Home / Blogs</p>
+          <h2 className="text-white text-5xl md:text-6xl font-bold z-10 ">
             Our Blogs
           </h2>
         </div>
