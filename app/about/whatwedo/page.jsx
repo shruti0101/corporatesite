@@ -1,9 +1,9 @@
 export default function WhatWeDo() {
   return (
     <>
-      <section className="w-full bg-[#1A4D6E] pt-6 md:pt-16 px-6 md:px-24">
+      <section className="w-full bg-[#1A4D6E] pt-6 md:pt-5 px-6 md:px-24">
         {/* Top Left Brand */}
-        <div className="flex items-start gap-4 mb-5 md:mb-12">
+        <div className="flex items-start gap-4 mb-5 md:mb-6">
           <div className="w-[3px] h-[42px] bg-white" />
           <div>
             <p className="text-white text-[18px] font-semibold tracking-wide">
@@ -14,7 +14,7 @@ export default function WhatWeDo() {
         </div>
 
         {/* Tag */}
-        <div className="inline-block bg-yellow-500/30 text-white text-[13px] px-4 py-[6px] rounded-full font-medium mb-3 md:mb-6">
+        <div className="inline-block bg-yellow-500/30 text-white text-[13px] px-4 py-[6px] rounded-full font-medium mb-3 md:mb-3">
           WHAT WE DO
         </div>
 
@@ -25,7 +25,7 @@ export default function WhatWeDo() {
         </h1>
 
         {/* Subtext */}
-        <p className="text-white text-[18px] mb-5 md:mb-12">
+        <p className="text-white text-[18px] mb-5 md:mb-5">
           No middlemen. No shared leads. No guesswork.
         </p>
 
@@ -33,9 +33,9 @@ export default function WhatWeDo() {
         <div className="border-t border-[#D6DFDA] mb-6 md:mb-12"></div>
       </section>
 
-      <section className="max-w-7xl mx-auto">
+      <section className="max-w-7xl px-3 mx-auto">
         {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-3 md:gap-6">
+        <div className="grid md:grid-cols-3 gap-3 md:gap-4">
           {/* Card */}
           {[
             {
@@ -77,7 +77,7 @@ export default function WhatWeDo() {
         </div>
       </section>
 
-      <section className="w-full px-6 md:px-24 py-6 md:py-12 bg-white">
+      <section className="w-full px-6 md:px-24 py-6 md:py-12 lg:py-9 bg-white">
         {/* Quote Box */}
         <div className="relative bg-[#e2eaff] rounded-xl px-10 py-10 mb-5 md:mb-10">
           {/* Left Accent Bar */}
@@ -150,14 +150,14 @@ export default function WhatWeDo() {
         </div>
       </section>
 
-      <section className="w-full bg-[#e8eff7] py-6 md:py-16 px-6 md:px-24">
+      <section className="w-full bg-[#e8eff7] py-6 md:py-10 px-6 md:px-24">
         {/* Tag */}
         <div className="inline-block bg-[#D7E8E1] text-[#2C7A67] text-[13px] px-4 py-[6px] rounded-full font-medium mb-3 md:mb-6">
           THE COMPARISON
         </div>
 
         {/* Heading */}
-        <h2 className="text-[35px] md:text-[46px] leading-[1.15]  text-[#1A1A1A] font-semibold mb-5 md:mb-12 tracking-[-0.5px]">
+        <h2 className="text-[35px] md:text-[46px] leading-[1.15]  text-[#1A1A1A] font-semibold mb-5 md:mb-6 tracking-[-0.5px]">
           Why settle for a listing when you can own the call?
         </h2>
 
@@ -230,14 +230,14 @@ export default function WhatWeDo() {
 </div>
       </section>
 
-      <section className="w-full bg-[#F4F6F5] px-6 md:px-24 py-7 md:py-16">
+      <section className="w-full bg-[#F4F6F5] px-6 md:px-24 py-7 md:py-8">
         {/* Heading Line 1 */}
         <h2 className="font-serif text-[25px] md:text-[48px] text-[#1A1A1A] leading-[1.2] mb-2">
           Others give you a listing.
         </h2>
 
         {/* Heading Line 2 (Italic Green) */}
-        <h2 className="font-serif italic text-[25px] md:text-[48px] text-black leading-[1.2] mb-4 md:mb-8">
+        <h2 className="font-serif italic text-[25px] md:text-[48px] text-black leading-[1.2] mb-4 md:mb-5">
           We give you a direct line to your buyer.
         </h2>
 
