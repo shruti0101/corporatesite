@@ -62,7 +62,7 @@ export default function AboutPage() {
       {/* ORIGIN */}
 
       {/* ORIGIN — PREMIUM TIMELINE */}
-      <section className="bg-[#DFE8E6] py-5 md:py-18 px-6 md:px-16">
+      <section className="bg-[#DFE8E6] py-5  lg:py-18 px-6 md:px-16">
         <div className="max-w-6xl mx-auto">
           {/* Heading */}
           <div className="mb-2 md:mb-7 max-w-3xl">
@@ -157,8 +157,8 @@ export default function AboutPage() {
       </section>
 
       {/* PASSION */}
-      <section className="py-6 md:py-20 px-6 md:px-16">
-        <div className="max-w-6xl mx-auto text-center mb-6 md:mb-16">
+      <section className="py-6 lg:py-20 px-6 md:px-16">
+        <div className="max-w-6xl mx-auto text-center mb-6 lg:mb-16">
           {/* Badge */}
           <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-black text-sm font-semibold tracking-wide uppercase mb-2 md:mb-6">
             OUR PASSION
@@ -212,7 +212,7 @@ export default function AboutPage() {
       </section>
 
       {/* QUOTE */}
-      <section className="bg-[#0B1F3A] text-white py-6 md:py-20 px-6 md:px-16 text-center">
+      <section className="bg-[#0B1F3A] text-white py-6 lg:py-20 px-6 md:px-16 text-center">
         <div className="max-w-4xl mx-auto">
           <p className="text-xl md:text-2xl font-semibold leading-relaxed mb-4">
             “Every MSME in India deserves a fair shot at the right buyer. We’re
@@ -225,7 +225,7 @@ export default function AboutPage() {
       </section>
 
       {/* DIFFERENT */}
-      <section className="py-4 md:py-15 px-6 md:px-16 ">
+      <section className="py-4 md:py-6 lg:py-15 px-6 md:px-16 ">
         <div className="max-w-7xl mx-auto text-center">
           {/* Badge */}
           <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-black text-sm font-semibold tracking-wide uppercase mb-3 md:mb-6">
@@ -319,7 +319,7 @@ export default function AboutPage() {
       </section>
 
       {/* OUR MISSION */}
-      <section className="py-6 md:py-24 px-6 md:px-16 bg-[#0B1F3A]">
+      <section className="py-6 md:py-10 px-6 md:px-16 bg-[#0B1F3A]">
         <div className="max-w-5xl mx-auto text-center">
           {/* Badge */}
           <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-white text-xs font-semibold tracking-wider uppercase mb-4 md:mb-6">
@@ -345,7 +345,7 @@ export default function AboutPage() {
       </section>
 
       {/* WHERE WE ARE GOING */}
-      <section className="py-6 md:py-15 px-6 md:px-16 bg-white">
+      <section className="py-6 md:py-10 px-6 md:px-16 bg-white">
         <div className="max-w-7xl mx-auto">
           {/* TOP TEXT */}
           <div className="max-w-5xl mx-auto text-center mb-7 md:mb-20">
@@ -436,7 +436,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#F7F6F2] py-8  md:py-20 px-6 md:px-16">
+      <section className="bg-[#F7F6F2] py-8   px-6 md:px-16">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white flex flex-col rounded-2xl p-6 md:p-12 text-center shadow-[0_20px_60px_rgba(0,0,0,0.08)] border border-gray-100">
             <h2 className="text-3xl font-bold mb-2 md:mb-4">
