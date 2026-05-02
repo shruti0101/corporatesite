@@ -4,3 +4,19 @@
 body {
   font-family: var(--font-poppins)
 }
+
+
+.pricing-table td:nth-child(3),
+.pricing-table th:nth-child(3) {
+  background-color: #fef9c3 !important;
+}
+
+.pricing-table td:nth-child(4),
+.pricing-table th:nth-child(4) {
+  background-color: #dbeafe !important;
+}
+
+.pricing-table td:nth-child(5),
+.pricing-table th:nth-child(5) {
+  background-color: #f3e8ff !important;
+}
