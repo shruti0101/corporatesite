@@ -36,7 +36,7 @@ export default function PricingTable() {
     </section>
 
     
-    <div className="w-full overflow-x-auto mt-10 bg-white p-4 px-10">
+    <div className="w-full overflow-x-auto mt-10 bg-white p-4 px-10 mb-20">
       <div className="min-w-[1000px] border border-gray-300">
         {/* Header */}
         <div className="bg-[#0f172a] text-white text-center py-4">
@@ -169,11 +169,121 @@ export default function PricingTable() {
           </tbody>
         </table>
 
-        <div className="text-xs text-gray-600 p-2 border-t">
+       
+      </div>
+       <div className="text-sm text-black p-2 ">
           * Direct contact (phone + email) visibility is Inquiry Bazaar's core differentiator — included in ALL plans.
         </div>
-      </div>
     </div>
+
+
+
+
+    <div className="w-full overflow-x-auto bg-white p-6">
+      <div className="min-w-[1200px] border border-gray-300">
+
+        {/* Top Header */}
+        <div className="bg-[#111827] text-white text-center py-4">
+          <h2 className="text-lg font-semibold">
+            INQUIRY BAZAAR — Business Investment Plans with GST Breakdown
+          </h2>
+          <p className="text-xs text-gray-300 mt-1">
+            GST Rate: 18% | Input Tax Credit available for all registered MSME buyers | Prices in INR (₹)
+          </p>
+        </div>
+
+        {/* GST Row */}
+        <div className="flex items-center border-b text-sm">
+          <div className="p-3 w-[200px] bg-gray-100 font-medium">GST Rate (%):</div>
+          <div className="p-3 bg-yellow-200 font-semibold">18%</div>
+          <div className="p-3 text-gray-600 text-xs">
+            Yellow cell = editable assumption. Change GST rate here and all totals update automatically.
+          </div>
+        </div>
+
+        {/* 6 Month Plans */}
+        <div className="bg-[#1f2937] text-white text-center py-2 font-semibold">
+          6-MONTH PLANS
+        </div>
+
+        <table className="w-full text-sm border-collapse">
+          <thead className="bg-red-500 text-white">
+            <tr>
+              <th className="border p-2">Plan</th>
+              <th className="border p-2">Base Price (₹)</th>
+              <th className="border p-2">GST Amount (18%)</th>
+              <th className="border p-2">Total Payable (₹)</th>
+              <th className="border p-2">Effective / Month (₹)</th>
+              <th className="border p-2">Annual if Renewed (₹)</th>
+              <th className="border p-2">Savings vs Annual</th>
+              <th className="border p-2">Best For</th>
+              <th className="border p-2">Ideal Customer</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {[
+              ["Starter", "40000", "7200", "47200", "6667", "72000", "8000", "New suppliers", "Small traders, new to digital"],
+              ["Growth", "60000", "10800", "70800", "10000", "94500", "10500", "Growing businesses", "Active SMEs scaling up"],
+              ["Pro", "95000", "17100", "112100", "15833", "162000", "18000", "Established suppliers", "Mid-size manufacturers"],
+              ["Elite", "140000", "25200", "165200", "23333", "234000", "26000", "Exporters & top brands", "Large exporters, enterprise"],
+            ].map((row, i) => (
+              <tr key={i} className="text-center">
+                {row.map((cell, j) => (
+                  <td key={j} className="border p-2">{cell}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        {/* 1 Year Plans */}
+        <div className="bg-[#1f2937] text-white text-center py-2 font-semibold mt-6">
+          1-YEAR PLANS (Save up to 10% vs renewing 2x 6-month)
+        </div>
+
+        <table className="w-full text-sm border-collapse">
+          <thead className="bg-red-500 text-white">
+            <tr>
+              <th className="border p-2">Plan</th>
+              <th className="border p-2">Base Price (₹)</th>
+              <th className="border p-2">GST Amount (18%)</th>
+              <th className="border p-2">Total Payable (₹)</th>
+              <th className="border p-2">Effective / Month (₹)</th>
+              <th className="border p-2">Saving vs 2x 6-month (₹)</th>
+              <th className="border p-2">Savings vs Annual</th>
+              <th className="border p-2">Best For</th>
+              <th className="border p-2">Ideal Customer</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {[
+              ["Starter", "80000", "14400", "94400", "6667", "72000", "-8000", "New suppliers", "Small traders, new to digital"],
+              ["Growth", "105000", "18900", "123900", "8750", "94500", "-10500", "Growing businesses", "Active SMEs scaling up"],
+              ["Pro", "180000", "32400", "212400", "15000", "162000", "-18000", "Established suppliers", "Mid-size manufacturers"],
+              ["Elite", "260000", "46800", "306800", "21667", "234000", "-26000", "Exporters & top brands", "Large exporters, enterprise"],
+            ].map((row, i) => (
+              <tr key={i} className="text-center">
+                {row.map((cell, j) => (
+                  <td key={j} className="border p-2">{cell}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+      </div>
+      
+        {/* Footer */}
+        <div className="text-sm text-black p-3  mt-3">
+          Annual plan subscribers receive: Priority onboarding within 48 hours + 1 month extended validity (13 months for price of 12). | Blue values = editable inputs | Black values = auto-calculated formulas
+        </div>
+    </div>
+
+
+
+
     </>
   );
 }
