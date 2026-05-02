@@ -192,15 +192,8 @@ export default function PricingTable() {
           </p>
         </div>
 
-        {/* GST Row */}
-        <div className="flex items-center border-b text-sm">
-          <div className="p-3 w-[200px] bg-gray-100 font-medium">GST Rate (%):</div>
-          <div className="p-3 bg-yellow-200 font-semibold">18%</div>
-          <div className="p-3 text-gray-600 text-xs">
-            Yellow cell = editable assumption. Change GST rate here and all totals update automatically.
-          </div>
-        </div>
-
+        {/* GST Row */} 
+     
         {/* 6 Month Plans */}
         <div className="bg-[#1f2937] text-white text-center py-2 font-semibold">
           6-MONTH PLANS
@@ -223,11 +216,11 @@ export default function PricingTable() {
 
           <tbody>
             {[
-              ["Starter", "40000", "7200", "47200", "6667", "72000", "8000", "New suppliers", "Small traders, new to digital"],
-              ["Growth", "60000", "10800", "70800", "10000", "94500", "10500", "Growing businesses", "Active SMEs scaling up"],
-              ["Pro", "95000", "17100", "112100", "15833", "162000", "18000", "Established suppliers", "Mid-size manufacturers"],
-              ["Elite", "140000", "25200", "165200", "23333", "234000", "26000", "Exporters & top brands", "Large exporters, enterprise"],
-            ].map((row, i) => (
+  ["Starter", "40,000", "7,200", "47,200", "6,667", "72,000", "8,000", "New suppliers", "Small traders, new to digital"],
+  ["Growth", "60,000", "10,800", "70,800", "10,000", "94,500", "10,500", "Growing businesses", "Active SMEs scaling up"],
+  ["Pro", "95,000", "17,100", "1,12,100", "15,833", "1,62,000", "18,000", "Established suppliers", "Mid-size manufacturers"],
+  ["Elite", "1,40,000", "25,200", "1,65,200", "23,333", "2,34,000", "26,000", "Exporters & top brands", "Large exporters, enterprise"],
+].map((row, i) => (
               <tr key={i} className="text-center">
                 {row.map((cell, j) => (
                   <td key={j} className="border p-2">{cell}</td>
@@ -259,11 +252,11 @@ export default function PricingTable() {
 
           <tbody>
             {[
-              ["Starter", "80000", "14400", "94400", "6667", "72000", "-8000", "New suppliers", "Small traders, new to digital"],
-              ["Growth", "105000", "18900", "123900", "8750", "94500", "-10500", "Growing businesses", "Active SMEs scaling up"],
-              ["Pro", "180000", "32400", "212400", "15000", "162000", "-18000", "Established suppliers", "Mid-size manufacturers"],
-              ["Elite", "260000", "46800", "306800", "21667", "234000", "-26000", "Exporters & top brands", "Large exporters, enterprise"],
-            ].map((row, i) => (
+  ["Starter", "80,000", "14,400", "94,400", "6,667", "72,000", "-8,000", "New suppliers", "Small traders, new to digital"],
+  ["Growth", "1,05,000", "18,900", "1,23,900", "8,750", "94,500", "-10,500", "Growing businesses", "Active SMEs scaling up"],
+  ["Pro", "1,80,000", "32,400", "2,12,400", "15,000", "1,62,000", "-18,000", "Established suppliers", "Mid-size manufacturers"],
+  ["Elite", "2,60,000", "46,800", "3,06,800", "21,667", "2,34,000", "-26,000", "Exporters & top brands", "Large exporters, enterprise"],
+].map((row, i) => (
               <tr key={i} className="text-center">
                 {row.map((cell, j) => (
                   <td key={j} className="border p-2">{cell}</td>
@@ -277,7 +270,7 @@ export default function PricingTable() {
       
         {/* Footer */}
         <div className="text-sm text-black p-3  mt-3">
-          Annual plan subscribers receive: Priority onboarding within 48 hours + 1 month extended validity (13 months for price of 12). | Blue values = editable inputs | Black values = auto-calculated formulas
+          Annual plan subscribers receive: Priority onboarding within 48 hours + 1 month extended validity (13 months for price of 12). 
         </div>
     </div>
 
