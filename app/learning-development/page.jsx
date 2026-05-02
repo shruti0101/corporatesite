@@ -106,7 +106,7 @@ const page = () => {
 
   return (
     <div>
-      <section className="relative w-full sb h-[50vh] sm:h-[30vh] md:h-[80vh] bg-[#1A4D6E] flex items-center overflow-hidden">
+      <section className="relative w-full sb h-[50vh] sm:h-[30vh] md:h-[70vh] bg-[#1A4D6E] flex items-center overflow-hidden">
         {/* Background Circles */}
         <div className="absolute right-[-100px] top-[-80px] w-[400px] h-[400px] bg-white/5 rounded-full"></div>
         <div className="absolute right-[140px] bottom-[10px] w-[300px] h-[300px] bg-white/5 rounded-full"></div>
@@ -134,10 +134,10 @@ const page = () => {
         </div>
       </section>
 
-      <section className="bg-[#F7F6F2] pt-4 pb-1 md:py-10 px-6 md:px-16">
+      <section className="bg-[#F7F6F2] pt-4 pb-1 md:pt-5 px-6 md:px-16">
         <div className="max-w-7xl mx-auto">
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-6 mb-2w md:mb-14">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-6 mb-2w md:mb-7">
             {stats.map((item, i) => (
               <div
                 key={i}
@@ -153,13 +153,13 @@ const page = () => {
         </div>
       </section>
 
-      <div className="bg-[#F7F6F2] py-4 md:py-10 pb-10">
+      <div className="bg-[#F7F6F2] py-4  pb-6">
         <div className="max-w-7xl mx-auto px-4">
           {/* Heading */}
           <h1 className="text-3xl md:text-5xl sc font-bold text-gray-900">
             Learning Tracks
           </h1>
-          <p className="text-gray-6 mt-2 md:mt-3 mb-4 md:mb-8">
+          <p className="text-gray-6 mt-2 md:mt-3 mb-4 md:mb-5">
             Click on any track to explore what's inside.
           </p>
 
@@ -245,7 +245,7 @@ const page = () => {
         </div>
       </div>
 
-      <section className="py-6 md:py-12 px-4 sm:px-6 md:px-12">
+      <section className="py-6 md:py-6 px-4 sm:px-6 md:px-12">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* CARD 1 */}
           <div className="bg-[#1A4D6E]  text-white rounded-2xl p-6 sm:p-8">

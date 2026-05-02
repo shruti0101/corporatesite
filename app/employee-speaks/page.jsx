@@ -80,7 +80,7 @@ const page = () => {
   return (
     <div>
       <>
-        <section className="relative sb w-full h-[45vh] sm:h-[45vh] md:h-[80vh] bg-[#1A4D6E] flex items-center overflow-hidden">
+        <section className="relative sb w-full h-[45vh] sm:h-[45vh] md:h-[70vh] bg-[#1A4D6E] flex items-center overflow-hidden">
           {/* Background Circles */}
           <div className="absolute right-[-100px] top-[-80px] w-[400px] h-[400px] bg-white/5 rounded-full"></div>
           <div className="absolute right-[140px] bottom-[10px] w-[300px] h-[300px] bg-white/5 rounded-full"></div>
@@ -107,10 +107,10 @@ const page = () => {
           </div>
         </section>
 
-        <section className="bg-[#F7F6F2] py-4 md:py-10 px-6 md:px-16">
+        <section className="bg-[#F7F6F2] py-4 md:py-5 px-6 md:px-16">
           <div className="max-w-7xl mx-auto">
             {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-6 mb-7 md:mb-14">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-6 mb-7 md:mb-8">
               {stats.map((item, i) => (
                 <div
                   key={i}
@@ -186,10 +186,10 @@ const page = () => {
           </div>
         </section>
 
-        <section className="bg-[#F7F6F2] py-2  md:py-16 px-6 md:px-16">
+        <section className="bg-[#F7F6F2] py-2  md:py-6 px-6 md:px-16">
           <div className="max-w-7xl mx-auto">
             {/* Heading */}
-            <div className=" mb-3 md:mb-12">
+            <div className=" mb-3 md:mb-6">
               <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
                 Life at Inquiry Bazaar
               </h2>

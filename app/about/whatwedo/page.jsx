@@ -33,7 +33,7 @@ export default function WhatWeDo() {
         <div className="border-t border-[#D6DFDA] mb-6 md:mb-12"></div>
       </section>
 
-      <section className="max-w-7xl px-3 mx-auto">
+      <section className="max-w-7xl px-3 mt-3 mx-auto">
         {/* Cards */}
         <div className="grid md:grid-cols-3 gap-3 md:gap-4">
           {/* Card */}

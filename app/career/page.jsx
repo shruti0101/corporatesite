@@ -58,7 +58,7 @@ const [activeTab, setActiveTab] = useState("All");
   return (
     <div>
 
-  <section className="relative sb  w-full h-[50vh] sm:h-[40vh] md:h-[80vh] bg-[#1A4D6E] flex items-center overflow-hidden">
+  <section className="relative sb  w-full h-[50vh] sm:h-[40vh] md:h-[70vh] bg-[#1A4D6E] flex items-center overflow-hidden">
       
       {/* Background Circles */}
       <div className="absolute right-[-100px] top-[-80px] w-[400px] h-[400px] bg-white/5 rounded-full"></div>
@@ -69,12 +69,12 @@ const [activeTab, setActiveTab] = useState("All");
         <div className="max-w-2xl">
           
           {/* Badge */}
-          <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-yellow-400 text-sm font-semibold tracking-wide uppercase mb-3 md:mb-6">
+          <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-yellow-400 text-sm font-semibold tracking-wide uppercase mb-3 md:mb-3">
          Open Positions
           </span>
 
           {/* Heading */}
-          <h2 className="text-white text-3xl sc md:text-[50px] font-extrabold leading-tight mb-3 md:mb-6">
+          <h2 className="text-white text-3xl sc md:text-[50px] font-extrabold leading-tight mb-3 md:mb-3">
        Find the Role That Fits You Best
           </h2>
 
@@ -89,11 +89,11 @@ const [activeTab, setActiveTab] = useState("All");
 
 
 
-   <section className="bg-[#F7F6F2] py-4 md:py-10 px-6 md:px-16">
+   <section className="bg-[#F7F6F2] py-4 md:py-5 px-6 md:px-16">
       <div className="max-w-7xl mx-auto">
         
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-6 mb-7 md:mb-14">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-6  ">
           {stats.map((item, i) => (
             <div
               key={i}
@@ -112,11 +112,11 @@ const [activeTab, setActiveTab] = useState("All");
     </section>
 
 
-      <section className="bg-[#F7F6F2] py-2 md:py-10 px-6 md:px-16">
+      <section className="bg-[#F7F6F2] py-2 md:py-6 px-6 md:px-16">
       <div className="max-w-6xl mx-auto">
 
         {/* Tabs */}
-        <div className="flex flex-wrap gap-2 md:gap-3 mb-10">
+        <div className="flex flex-wrap gap-2 md:gap-3 mb-10 md:mb-5">
           {tabs.map((tab) => (
             <button
               key={tab}
@@ -134,7 +134,7 @@ const [activeTab, setActiveTab] = useState("All");
         </div>
 
         {/* Jobs */}
-        <div className=" space-y-3 md:space-y-6">
+        <div className=" space-y-3 md:space-y-4">
           {filteredJobs.map((job, i) => (
             <div
               key={i}
