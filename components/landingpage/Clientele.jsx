@@ -29,15 +29,15 @@ export default function BrandSection() {
   ];
 
   return (
-    <section className="py-16 bg-[#f5f5f5]">
+    <section className="py-4 md:py-8 bg-[#f5f5f5]">
       <div className="max-w-7xl mx-auto px-4">
 
         {/* TITLE */}
-        <h2 className="text-3xl md:text-4xl font-semibold text-center text-gray-700">
+        <h2 className="text-4xl md:text-4xl font-semibold text-center text-gray-700">
           Trusted By Global Brands
         </h2>
 
-        <div className="w-28 h-[3px] bg-red-500 mx-auto mt-3 mb-12"></div>
+        <div className="w-28 h-[3px] bg-red-500 mx-auto mt-2 md:mt-3  md:mb-12"></div>
 
         {/* SWIPER */}
         <Swiper
@@ -54,6 +54,7 @@ export default function BrandSection() {
             0: {
               slidesPerView: 2,
               grid: { rows: 2 },
+              spaceBetween:20 ,
             },
             640: {
               slidesPerView: 3,
@@ -75,7 +76,7 @@ export default function BrandSection() {
                 <img
                   src={logo}
                   alt="brand"
-                  className="h-[60px] object-cover   transition"
+                  className="h-[60px] object-contain   transition"
                 />
               </div>
             </SwiperSlide>
