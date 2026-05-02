@@ -157,10 +157,10 @@ export default function AboutPage() {
       </section>
 
       {/* PASSION */}
-      <section className="py-6 lg:py-20 px-6 md:px-16">
-        <div className="max-w-6xl mx-auto text-center mb-6 lg:mb-16">
+      <section className="py-6 lg:py-8 px-6 md:px-16">
+        <div className="max-w-6xl mx-auto text-center mb-6 ">
           {/* Badge */}
-          <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-black text-sm font-semibold tracking-wide uppercase mb-2 md:mb-6">
+          <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-black text-sm font-semibold tracking-wide uppercase mb-2 ">
             OUR PASSION
           </span>
 
@@ -212,7 +212,7 @@ export default function AboutPage() {
       </section>
 
       {/* QUOTE */}
-      <section className="bg-[#0B1F3A] text-white py-6 lg:py-20 px-6 md:px-16 text-center">
+      <section className="bg-[#0B1F3A] text-white py-6 lg:py-10 px-6 md:px-16 text-center">
         <div className="max-w-4xl mx-auto">
           <p className="text-xl md:text-2xl font-semibold leading-relaxed mb-4">
             “Every MSME in India deserves a fair shot at the right buyer. We’re
@@ -225,7 +225,7 @@ export default function AboutPage() {
       </section>
 
       {/* DIFFERENT */}
-      <section className="py-4 md:py-6 lg:py-15 px-6 md:px-16 ">
+      <section className="py-4 md:py-6  px-6 md:px-16 ">
         <div className="max-w-7xl mx-auto text-center">
           {/* Badge */}
           <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-black text-sm font-semibold tracking-wide uppercase mb-3 md:mb-6">
@@ -239,7 +239,7 @@ export default function AboutPage() {
             </span>
           </h2>
 
-          <p className="text-gray-800 text-md md:text-lg mb-6 md:mb-14">
+          <p className="text-gray-800 text-md md:text-lg mb-6 md:mb-7">
             At Inquiry Bazaar, your listing isn’t just a profile on a page. It’s
             a strategically optimised presence built to attract genuine buyers —
             not just clicks. We combine marketplace infrastructure with deep
@@ -307,7 +307,7 @@ export default function AboutPage() {
           </div>
 
           {/* CTA */}
-          <div className="mt-5 md:mt-16">
+          <div className="mt-5 md:mt-7">
             <button
               className="px-8 py-3 rounded-full text-white font-semibold 
      bg-[#0D2865]  shadow-md hover:shadow-lg transition"
@@ -345,10 +345,10 @@ export default function AboutPage() {
       </section>
 
       {/* WHERE WE ARE GOING */}
-      <section className="py-6 md:py-10 px-6 md:px-16 bg-white">
+      <section className="py-6 md:py-7 px-6 md:px-16 bg-white">
         <div className="max-w-7xl mx-auto">
           {/* TOP TEXT */}
-          <div className="max-w-5xl mx-auto text-center mb-7 md:mb-20">
+          <div className="max-w-5xl mx-auto text-center mb-7 md:mb-10">
             {/* Badge */}
             <span className="inline-block px-4 py-1.5 rounded-full bg-[#E67C29]/10 text-[#E67C29] text-xs font-semibold tracking-wider uppercase mb-3 md:mb-5">
               OUR VISION
