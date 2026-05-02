@@ -46,7 +46,7 @@ const handleSubmit = async (e) => {
 
     <>
     
-    <section className="relative w-full h-[60vh]    md:h-[70vh] bg-[#1A4D6E] flex items-center overflow-hidden">
+    <section className="relative w-full h-[60vh]  md:h-[35vh]  lg:h-[70vh] bg-[#1A4D6E] flex items-center overflow-hidden">
       
       {/* Background Circles */}
       <div className="absolute right-[-100px] top-[-80px] w-[400px] h-[400px] bg-white/5 rounded-full"></div>
