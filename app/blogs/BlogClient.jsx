@@ -34,7 +34,7 @@ export default function BlogsPage() {
       {/* Hero Section */}
       <section
         style={{ backgroundImage: "url('/testimonialbg.webp')" }}
-        className="w-full bg-cover h-[30vh] md:h-[70vh] -rotate-180 relative"
+        className="w-full bg-cover h-[30vh] md:h-[40vh] -rotate-180 relative"
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="absolute inset-0 flex flex-col items-center justify-center">
@@ -46,7 +46,7 @@ export default function BlogsPage() {
       </section>
 
       {/* Blog Listing */}
-      <div className="max-w-7xl mx-auto px-6 py-6 md:py-12">
+      <div className="max-w-7xl mx-auto px-6 py-6 md:py-5">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogs.slice(0, visibleCount).map((b) => (
             <article

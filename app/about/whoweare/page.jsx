@@ -17,7 +17,7 @@ export default function AboutPage() {
   return (
     <div className="bg-white text-gray-900">
       {/* HERO */}
-      <section className="relative sb w-full h-[50svh]  sm:h-[50vh] md:h-[40vh] lg:h-[70vh] bg-[#1A4D6E] flex items-center overflow-hidden">
+      <section className="relative sb w-full h-[50svh]  sm:h-[50vh] md:h-[60vh] lg:h-[50vh] bg-[#1A4D6E] flex items-center overflow-hidden">
         <div className="absolute right-[-100px] top-[-80px] w-[400px] h-[200px] md:h-[400px] bg-white/5 rounded-full"></div>
         <div className="absolute right-[140px] bottom-[10px] w-[300px] h-[200px] md:h-[300px] bg-white/5 rounded-full"></div>
 
@@ -62,7 +62,7 @@ export default function AboutPage() {
       {/* ORIGIN */}
 
       {/* ORIGIN — PREMIUM TIMELINE */}
-      <section className="bg-[#DFE8E6] py-5  lg:py-18 px-6 md:px-16">
+      <section className="bg-[#DFE8E6] py-5  lg:py-7 px-6 md:px-16">
         <div className="max-w-6xl mx-auto">
           {/* Heading */}
           <div className="mb-2 md:mb-7 max-w-3xl">
@@ -432,7 +432,7 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
-        </div>
+        </div>w
       </section>
 
       {/* CTA */}

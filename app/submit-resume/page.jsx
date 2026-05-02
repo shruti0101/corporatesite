@@ -46,7 +46,7 @@ const handleSubmit = async (e) => {
 
     <>
     
-    <section className="relative w-full h-[60vh]    md:h-[80vh] bg-[#1A4D6E] flex items-center overflow-hidden">
+    <section className="relative w-full h-[60vh]    md:h-[70vh] bg-[#1A4D6E] flex items-center overflow-hidden">
       
       {/* Background Circles */}
       <div className="absolute right-[-100px] top-[-80px] w-[400px] h-[400px] bg-white/5 rounded-full"></div>
@@ -57,7 +57,7 @@ const handleSubmit = async (e) => {
         <div className="max-w-4xl">
           
           {/* Badge */}
-          <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-yellow-400 text-sm font-semibold tracking-wide uppercase mb-3 md:mb-6">
+          <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-yellow-400 text-sm font-semibold tracking-wide uppercase mb-3 ">
             Join Our Team
           </span>
 
@@ -84,8 +84,8 @@ const handleSubmit = async (e) => {
 
 
 
-<section className="bg-[#f3f1ec] py-6 md:py-20 px-4 md:px-10">
-  <div className="max-w-7xl  mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12">
+<section className="bg-[#f3f1ec] py-6 md:py-4  px-4 md:px-10">
+  <div className="max-w-7xl  mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 md:gap-5">
 
     {/* LEFT SIDE */}
     <div className="lg:col-span-2 ">
@@ -94,7 +94,7 @@ const handleSubmit = async (e) => {
       <h2 className="text-[30px] md:text-[44px] sc text-[#1a1a1a] mb-2">
         Tell Us About Yourself
       </h2>
-      <p className="text-[#6b7280] text-[15px] mb-4 md:mb-10">
+      <p className="text-[#6b7280] text-[15px] mb-4     ">
         Fill in your details below — takes less than 5 minutes.
       </p>
 
