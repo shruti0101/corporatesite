@@ -106,7 +106,7 @@ const page = () => {
 
   return (
     <div>
-      <section className="relative w-full sb h-[50vh] sm:h-[30vh] md:h-[35vh] lg:h-[70vh] bg-[#1A4D6E] flex items-center overflow-hidden">
+      <section className="relative w-full sb h-[50vh] sm:h-[30vh] md:h-[65vh] lg:h-[70vh] bg-[#1A4D6E] flex items-center overflow-hidden">
         {/* Background Circles */}
         <div className="absolute right-[-100px] top-[-80px] w-[400px] h-[400px] bg-white/5 rounded-full"></div>
         <div className="absolute right-[140px] bottom-[10px] w-[300px] h-[300px] bg-white/5 rounded-full"></div>
@@ -115,7 +115,7 @@ const page = () => {
         <div className=" px-6 md:px-12">
           <div className="max-w-2xl">
             {/* Badge */}
-            <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-yellow-400 text-sm font-semibold tracking-wide uppercase mb-3 md:mb-6">
+            <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-yellow-400 text-sm font-semibold tracking-wide uppercase mb-3 md:mb-4">
               Grow With Us
             </span>
 
