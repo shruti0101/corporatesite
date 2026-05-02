@@ -91,16 +91,16 @@ export default function Navbar() {
 
           {/* DESKTOP RIGHT */}
           <div className="hidden md:flex items-center gap-6">
-             <div className="flex items-center w-[300px] lg:w-[420px] h-[40px] bg-gray-100 rounded-full overflow-hidden">
-    <input
-      type="text"
-      placeholder="Search"
-      className="flex-1 px-4 bg-transparent text-sm outline-none"
-    />
-    <div className="w-[50px] flex justify-center">
-      <Search className="w-4 h-4 text-gray-600" />
-    </div>
-  </div>
+            <div className="flex items-center w-[300px] lg:w-[420px] h-[40px] bg-gray-100 rounded-full overflow-hidden">
+              <input
+                type="text"
+                placeholder="Search"
+                className="flex-1 px-4 bg-transparent text-sm outline-none"
+              />
+              <div className="w-[50px] flex justify-center">
+                <Search className="w-4 h-4 text-gray-600" />
+              </div>
+            </div>
 
             {/* ✅ QUICK LINKS (HOVER + CLICK) */}
             <div
