@@ -1,7 +1,7 @@
 export default function WhatWeDo() {
   return (
     <>
-      <section className="w-full bg-[#1A4D6E] pt-6 md:pt-5 px-6 md:px-24">
+      <section className="w-full bg-[#1A4D6E] pt-6 md:pt-5 md:py-7 px-6 md:px-24">
         {/* Top Left Brand */}
         <div className="flex items-start gap-4 mb-5 md:mb-6">
           <div className="w-[3px] h-[42px] bg-white" />
