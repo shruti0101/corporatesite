@@ -40,16 +40,14 @@ export default function Navbar() {
     {
       title: "Media",
       items: [
-        { name: "Press Releases", href: "/media/press" },
+            { name: "Articles", href: "/blogs" },
+   
         { name: "News", href: "/media/news" },
         { name: "Events", href: "/media/events" },
         { name: "Gallery", href: "/media/gallery" },
       ],
     },
-    {
-      title: "Blog",
-      items: [{ name: "Latest Posts", href: "/blogs" }],
-    },
+  
   ];
 
   const quickLinks = [

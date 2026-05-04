@@ -40,10 +40,8 @@ export default function PricingTable() {
       <div className="min-w-[1000px] border border-gray-300">
         {/* Header */}
         <div className="bg-[#0f172a] text-white text-center py-4">
-          <h1 className="text-lg font-semibold tracking-wide">
-            INQUIRY BAZAAR PRIVATE LIMITED
-          </h1>
-          <p className="text-sm mt-1 text-gray-300">
+        
+          <p className="text-md md:text-lg mt-1 text-white">
            Subscription Module Packages — Pricing & Features (All prices exclusive of GST @ 18%)
           </p>
         </div>
@@ -185,7 +183,7 @@ export default function PricingTable() {
         {/* Top Header */}
         <div className="bg-[#111827] text-white text-center py-4">
           <h2 className="text-lg font-semibold">
-            INQUIRY BAZAAR — Business Investment Plans with GST Breakdown
+             Business Investment Plans with GST Breakdown
           </h2>
           <p className="text-xs text-gray-300 mt-1">
             GST Rate: 18% | Input Tax Credit available for all registered MSME buyers | Prices in INR (₹)
