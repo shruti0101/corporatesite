@@ -46,7 +46,7 @@ export default function Navbar() {
         { name: "Events", href: "/media/events" },
         { name: "Gallery", href: "/media/gallery" },
       ],
-    },20
+    },
   
   ];
 
