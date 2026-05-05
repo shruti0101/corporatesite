@@ -31,7 +31,7 @@ export default function Navbar() {
     {
       title: "Solutions",
       items: [
-        { name: "Seller Solutions", href: "/solutions/seller" },
+        { name: "Seller Solutions", href: "/solutions" },
         { name: "Buyer Solutions", href: "/solutions/buyer" },
         { name: "Enterprise Tools", href: "/solutions/enterprise" },
         { name: "Pricing", href: "/pricing" },
@@ -46,7 +46,7 @@ export default function Navbar() {
         { name: "Events", href: "/media/events" },
         { name: "Gallery", href: "/media/gallery" },
       ],
-    },
+    },20
   
   ];
 
