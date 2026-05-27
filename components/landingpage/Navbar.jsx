@@ -47,6 +47,10 @@ export default function Navbar() {
         { name: "Gallery", href: "/media/gallery" },
       ],
     },
+    {title:"Blogs",
+      items: [
+        { name: "Latest", href: "/blogs" },]
+    }
   
   ];
 

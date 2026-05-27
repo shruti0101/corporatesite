@@ -34,7 +34,7 @@ export default function BlogsPage() {
       {/* Hero Section */}
       <section
     
-        className="w-full bg-[#1A4D6E] h-[30vh] md:h-[70vh]  relative"
+        className="w-full bg-[#1A4D6E] h-[30vh] md:h-[50vh]  relative"
       >
      
         <div className="absolute inset-0 flex flex-col items-center justify-center">
