@@ -37,7 +37,7 @@ export default function Navbar() {
         { name: "Pricing", href: "/pricing" },
       ],
     },
-    {
+    { 
       title: "Media",
       items: [
             { name: "Articles", href: "/blogs" },

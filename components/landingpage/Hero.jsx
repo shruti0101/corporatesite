@@ -118,6 +118,13 @@ export default function HeroSection() {
   const [activeTab, setActiveTab] = useState("buyer");
   return (
     <>
+
+
+
+
+
+
+
       <div className="relative w-full">
         {/* HERO SLIDER */}
         <Swiper
@@ -130,17 +137,16 @@ export default function HeroSection() {
           {slides.map((slide) => (
             <SwiperSlide key={slide.id}>
               <div className="relative w-full h-full">
-                {/* BACKGROUND IMAGE */}
-                <Image
-                  src={slide.image}
-                  alt="hero"
-                  fill
-                  className="object-cover"
-                  priority
-                />
+                <section className="relative sb  w-full h-[50vh] sm:h-[40vh] md:h-[60vh] lg:h-[70vh] bg-[#1A4D6E] flex items-center overflow-hidden">
+      
+      {/* Background Circles */}
+      <div className="absolute right-[-100px] top-[-80px] w-[400px] h-[400px] bg-white/5 rounded-full"></div>
+      <div className="absolute right-[140px] bottom-[10px] w-[300px] h-[300px] bg-white/5 rounded-full"></div>
 
-                {/* DARK OVERLAY */}
-                <div className="absolute inset-0 bg-black/50"></div>
+   
+    </section>
+
+       
 
                 {/* CONTENT */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
