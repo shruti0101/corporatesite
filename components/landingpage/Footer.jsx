@@ -28,9 +28,9 @@ export default function Footer() {
   const about = [
     
     { name: "Who we are ", href: "/about/whoweare" },
-    { name: "Who we do ", href: "/about/whowedo" },
+    { name: "What we do ", href: "/about/whatwedo" },
     { name: "Career ", href: "/career" },
-    { name: "Contact us", href: "/" },
+    { name: "Contact us", href: "https://www.inquirybazaar.com/contact-us" },
     { name: "Blog", href: "/blogs" },
   ];
   const helpLinks = [
@@ -55,30 +55,75 @@ export default function Footer() {
     { name: "Submit Resume", href: "submit-resume" },
   ];
 
+
+
+
+
+
+
+
+
+const socialLinks = [
+  {
+    icon: FaFacebookF,
+    href: "https://www.facebook.com/people/Inquiry-Bazaar/61562989183794/",
+  },
+  {
+    icon: FaInstagram,
+    href: "https://www.instagram.com/inquirybazaar/",
+  },
+
+  {
+    icon: FaLinkedinIn,
+    href: "https://www.linkedin.com/company/inquirybazaar/",
+  },
+  {
+    icon: FaYoutube,
+    href: "https://www.youtube.com/@inquirybazaar",
+  },
+];
+
+
+
+
   return (
     <footer className="bg-[#f3f3f3] text-gray-700 text-[15px]">
       {/* Top Bar */}
       <div className="flex flex-col md:flex-row justify-between items-center px-6 md:px-16 py-4 border-b border-gray-300">
         {/* Right - Social Icons */}
-        <div className="flex items-center gap-4 mt-4 md:mt-0">
-          <span className="font-medium text-gray-600">Follow Us On:</span>
-          <div className="flex gap-3">
-            {[
-              FaFacebookF,
-              FaInstagram,
-              FaXTwitter,
-              FaLinkedinIn,
-              FaYoutube,
-            ].map((Icon, i) => (
-              <div
-                key={i}
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-600 text-white text-lg"
-              >
-                <Icon />
-              </div>
-            ))}
-          </div>
-        </div>
+      <div className="flex items-center gap-4 mt-4 md:mt-0">
+  <span className="font-medium text-gray-600">
+    Follow Us On:
+  </span>
+
+  <div className="flex gap-3">
+    {socialLinks.map((item, i) => {
+      const Icon = item.icon;
+
+      return (
+        <a
+          key={i}
+          href={item.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            w-10 h-10
+            flex items-center justify-center
+            rounded-full
+            bg-gray-600
+            text-white
+            text-lg
+            transition-all duration-300
+            hover:bg-[#ec771c]
+            hover:scale-110
+          "
+        >
+          <Icon />
+        </a>
+      );
+    })}
+  </div>
+</div>
       </div>
 
       {/* Links Section */}

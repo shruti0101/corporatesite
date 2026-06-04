@@ -62,3 +62,4 @@ export async function POST(req) {
     return Response.json({ error: "Failed to send email" }, { status: 500 });
   }
 }
+

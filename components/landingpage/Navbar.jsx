@@ -15,8 +15,8 @@ export default function Navbar() {
       items: [
         { name: "Who We Are", href: "/about/whoweare" },
         { name: "What We Do", href: "/about/whatwedo" },
-        { name: "Career", href: "/career" },
-        { name: "Contact Us", href: "/contact" },
+      
+        { name: "Contact Us", href: "https://www.inquirybazaar.com/contact-us" },
       ],
     },
     {
@@ -31,9 +31,9 @@ export default function Navbar() {
     {
       title: "Solutions",
       items: [
-        { name: "Seller Solutions", href: "/solutions" },
-        { name: "Buyer Solutions", href: "/solutions/buyer" },
-        { name: "Enterprise Tools", href: "/solutions/enterprise" },
+        { name: "Seller Solutions", href: "https://seller.inquirybazaar.com/" },
+        { name: "Buyer Solutions", href: "https://buyer.inquirybazaar.com/" },
+   
         { name: "Pricing", href: "/pricing" },
       ],
     },
@@ -47,18 +47,15 @@ export default function Navbar() {
         { name: "Gallery", href: "/media/gallery" },
       ],
     },
-    {title:"Blogs",
-      items: [
-        { name: "Latest", href: "/blogs" },]
-    }
+   
   
   ];
 
   const quickLinks = [
-    { name: "Login", href: "/login" },
-    { name: "Register", href: "/register" },
-    { name: "Help Center", href: "/help" },
-    { name: "Support", href: "/support" },
+    { name: "Login", href: "https://dir.inquirybazaar.com/login" },
+  
+    { name: "Help Center", href: "https://www.inquirybazaar.com/faqs" },
+    { name: "Support", href: "https://www.inquirybazaar.com/contact-us" },
   ];
 
   const [mobileOpen, setMobileOpen] = useState(false);

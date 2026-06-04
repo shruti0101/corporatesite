@@ -7,7 +7,7 @@ const Page = () => {
 
 const [loading, setLoading] = useState(false);
 const [submitted, setSubmitted] = useState(false);
-
+const [resumeFile, setResumeFile] = useState(null);
 
 const handleSubmit = async (e) => {
   e.preventDefault();
@@ -219,23 +219,41 @@ const handleSubmit = async (e) => {
             </label>
 
             <div className="mt-3 border border-dashed border-[#d6d3cd] rounded-xl p-10 text-center bg-white">
-              <input
-                type="file"
-                name="resume"
-                accept=".pdf,.doc,.docx"
-                required
-                className="hidden"
-                id="resume"
-              />
-              <label htmlFor="resume" className="cursor-pointer">
-                <div className="text-gray-400 text-2xl mb-2">📄</div>
-                <p className="text-[14px] text-blue-600 font-medium">
-                  Click to upload
-                </p>
-                <p className="text-xs text-gray-500 mt-1">
-                  PDF, DOC, DOCX — Max 5 MB
-                </p>
-              </label>
+            <input
+  type="file"
+  name="resume"
+  accept=".pdf,.doc,.docx"
+  required
+  className="hidden"
+  id="resume"
+  onChange={(e) => {
+    if (e.target.files && e.target.files[0]) {
+      setResumeFile(e.target.files[0]);
+    }
+  }}
+/>
+        <label htmlFor="resume" className="cursor-pointer block">
+  <div className="text-gray-400 text-2xl mb-2">📄</div>
+
+  <p className="text-[14px] text-blue-600 font-medium">
+    {resumeFile ? "Resume Selected" : "Click to upload"}
+  </p>
+
+  <p className="text-xs text-gray-500 mt-1">
+    PDF, DOC, DOCX — Max 5 MB
+  </p>
+
+  {resumeFile && (
+    <div className="mt-3 p-2 bg-green-50 border border-green-200 rounded-lg">
+      <p className="text-sm font-medium text-green-700 break-all">
+         {resumeFile.name}
+      </p>
+      <p className="text-xs text-gray-500 mt-1">
+        {(resumeFile.size / 1024 / 1024).toFixed(2)} MB
+      </p>
+    </div>
+  )}
+</label>
             </div>
           </div>
 
@@ -328,8 +346,8 @@ const handleSubmit = async (e) => {
         <h4 className="text-lg font-semibold mt-1 mb-3">
           Talk to our HR team
         </h4>
-        <p className="text-sm">📧 careers@inquirybazaar.com</p>
-        <p className="text-sm mt-1">📞 +91 1145678900</p>
+        <p className="text-sm">📧 hr@inquirybazaar.com</p>
+        <p className="text-sm mt-1">📞 +91 01142603232</p>
       </div>
 
     </div>
