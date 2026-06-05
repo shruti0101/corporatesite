@@ -4,10 +4,74 @@ import { ChevronDown, Menu, Search, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
-
+import { useRouter } from "next/navigation";
 export default function Navbar() {
+
+
+  const searchPages = [
+  { name: "Who We Are", href: "/about/whoweare" },
+  { name: "What We Do", href: "/about/whatwedo" },
+  { name: "Contact Us", href: "https://www.inquirybazaar.com/contact-us" },
+
+  { name: "Career", href: "/career" },
+  { name: "Employee Speaks", href: "/employee-speaks" },
+  { name: "Learning & Development", href: "/learning-development" },
+  { name: "Submit Resume", href: "/submit-resume" },
+
+  { name: "Seller Solutions", href: "https://seller.inquirybazaar.com/" },
+  { name: "Buyer Solutions", href: "https://buyer.inquirybazaar.com/" },
+  { name: "Pricing", href: "/pricing" },
+
+  { name: "Articles", href: "/blogs" },
+  { name: "News", href: "/media/news" },
+  { name: "Events", href: "/media/events" },
+  { name: "Gallery", href: "/media/gallery" },
+
+  { name: "Login", href: "https://dir.inquirybazaar.com/login" },
+  { name: "Help Center", href: "https://www.inquirybazaar.com/faqs" },
+  { name: "Support", href: "https://www.inquirybazaar.com/contact-us" },
+];
+
+
+const router = useRouter();
+
+const [search, setSearch] = useState("");
+const [results, setResults] = useState([]);
+
+
+
+
+
+
+
+
+
+
   const menuRef = useRef();
   const [quickOpen, setQuickOpen] = useState(false);
+
+
+
+
+
+
+const handleSearch = (value) => {
+  setSearch(value);
+
+  if (!value.trim()) {
+    setResults([]);
+    return;
+  }
+
+  const filtered = searchPages.filter((item) =>
+    item.name.toLowerCase().includes(value.toLowerCase())
+  );
+
+  setResults(filtered);
+};
+
+
+
 
   const menuData = [
     {
@@ -90,16 +154,39 @@ export default function Navbar() {
 
           {/* DESKTOP RIGHT */}
           <div className="hidden md:flex items-center gap-6">
-            <div className="flex items-center w-[300px] lg:w-[420px] h-[40px] bg-gray-100 rounded-full overflow-hidden">
-              <input
-                type="text"
-                placeholder="Search"
-                className="flex-1 px-4 bg-transparent text-sm outline-none"
-              />
-              <div className="w-[50px] flex justify-center">
-                <Search className="w-4 h-4 text-gray-600" />
-              </div>
-            </div>
+           <div className="relative">
+  <div className="flex items-center w-[300px] lg:w-[420px] h-[40px] bg-gray-100 rounded-full overflow-hidden">
+    <input
+      type="text"
+      placeholder="Search pages..."
+      value={search}
+      onChange={(e) => handleSearch(e.target.value)}
+      className="flex-1 px-4 bg-transparent text-sm outline-none"
+    />
+
+    <div className="w-[50px] flex justify-center">
+      <Search className="w-4 h-4 text-gray-600" />
+    </div>
+  </div>
+
+  {results.length > 0 && (
+    <div className="absolute top-full mt-2 w-full bg-white border rounded-xl shadow-lg overflow-hidden z-50">
+      {results.map((item, index) => (
+        <Link
+          key={index}
+          href={item.href}
+          className="block px-4 py-3 text-sm hover:bg-gray-100"
+          onClick={() => {
+            setSearch("");
+            setResults([]);
+          }}
+        >
+          {item.name}
+        </Link>
+      ))}
+    </div>
+  )}
+</div>
 
             {/* ✅ QUICK LINKS (HOVER + CLICK) */}
             <div
@@ -212,16 +299,39 @@ export default function Navbar() {
         {mobileOpen && (
           <div ref={menuRef} className="md:hidden border-t py-4 space-y-4">
             {/* SEARCH */}
-            <div className="flex items-center w-full h-[40px] bg-gray-100 rounded-full overflow-hidden">
-              <input
-                type="text"
-                placeholder="Search"
-                className="flex-1 px-4 bg-transparent text-sm outline-none"
-              />
-              <div className="w-[50px] flex justify-center">
-                <Search className="w-4 h-4 text-gray-600" />
-              </div>
-            </div>
+           <div className="relative">
+  <div className="flex items-center w-[300px] lg:w-[420px] h-[40px] bg-gray-100 rounded-full overflow-hidden">
+    <input
+      type="text"
+      placeholder="Search pages..."
+      value={search}
+      onChange={(e) => handleSearch(e.target.value)}
+      className="flex-1 px-4 bg-transparent text-sm outline-none"
+    />
+
+    <div className="w-[50px] flex justify-center">
+      <Search className="w-4 h-4 text-gray-600" />
+    </div>
+  </div>
+
+  {results.length > 0 && (
+    <div className="absolute top-full mt-2 w-full bg-white border rounded-xl shadow-lg overflow-hidden z-50">
+      {results.map((item, index) => (
+        <Link
+          key={index}
+          href={item.href}
+          className="block px-4 py-3 text-sm hover:bg-gray-100"
+          onClick={() => {
+            setSearch("");
+            setResults([]);
+          }}
+        >
+          {item.name}
+        </Link>
+      ))}
+    </div>
+  )}
+</div>
 
             {/* MOBILE DROPDOWN */}
             {menuData.map((menu, i) => (

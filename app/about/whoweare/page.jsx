@@ -307,6 +307,10 @@ export default function AboutPage() {
           </div>
 
           {/* CTA */}
+
+<a href="tel:+917303486777" >
+
+
           <div className="mt-5 md:mt-7">
             <button
               className="px-8 py-3 rounded-full text-white font-semibold 
@@ -315,6 +319,8 @@ export default function AboutPage() {
               Talk To Our Experts
             </button>
           </div>
+</a>
+
         </div>
       </section>
 

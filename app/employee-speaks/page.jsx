@@ -11,40 +11,99 @@ import "swiper/css/pagination";
 const page = () => {
   const testimonials = [
     {
-      text: `Inquiry Bazaar gave me the freedom to experiment and fail safely. I joined as a junior developer and within 18 months I was leading a feature team. The mentorship here is genuinely second to none.`,
-      name: "Rahul Khanna",
-      role: "Engineering Lead · 3 years at IB",
-      initials: "RK",
+      text: `Working at Inquiry Bazaar has helped me grow both technically and professionally. The company encourages innovation in SEO strategies, and I've had the opportunity to work on challenging projects that deliver measurable results for clients."`
+,
+      name: "Jyoti Gupta",
+      role: "Senior SEO Executive · 1.6 years at IB",
+      initials: "JG",
       color: "bg-blue-100 text-blue-600",
     },
     {
-      text: `The culture here is warm and collaborative. I’ve never felt like just a resource — every opinion is valued, every suggestion is heard. Work-life balance is real, not just a talking point.`,
-      name: "Priya Sehgal",
-      role: "Marketing Manager · 2 years at IB",
-      initials: "PS",
+      text: `The collaborative environment and continuous learning culture make Inquiry Bazaar a great place to work. I appreciate the freedom to experiment with new optimization techniques and contribute to client success.`,
+      name: "Uma Rathi",
+      role: "SEO  · 2 months at IB",
+      initials: "UR",
       color: "bg-green-100 text-green-600",
     },
+
+
     {
-      text: `I was changing careers from finance to sales, and IB took a chance on me. The onboarding programme was structured brilliantly and my manager helped me ramp up faster than I expected.`,
-      name: "Ankit Mehta",
-      role: "Senior BDE · 1.5 years at IB",
-      initials: "AM",
+      text: `At Inquiry Bazaar, I have the opportunity to manage diverse advertising campaigns across multiple industries. The company encourages creativity, data-driven decisions, and continuous improvement.`,
+      name: "Ankit Prasad",
+      role: "PPC Campaign Manager · 9 months at IB",
+      initials: "AP",
       color: "bg-yellow-100 text-yellow-600",
     },
+
+
     {
-      text: `I was changing careers from finance to sales, and IB took a chance on me. The onboarding programme was structured brilliantly and my manager helped me ramp up faster than I expected.`,
-      name: "Ankit Mehta",
-      role: "Senior BDE · 1.5 years at IB",
-      initials: "AM",
+      text: `The organization provides the right tools, support, and learning opportunities to stay updated with the latest advertising trends. It's a great place to build expertise in paid marketing.`,
+      name: "Sneha Arora",
+      role: "Digital Advertising Specialist · 1.1 years at IB",
+      initials: "SA",
       color: "bg-yellow-100 text-yellow-600",
     },
+
+
     {
-      text: `I was changing careers from finance to sales, and IB took a chance on me. The onboarding programme was structured brilliantly and my manager helped me ramp up faster than I expected.`,
-      name: "Ankit Mehta",
-      role: "Senior BDE · 1.5 years at IB",
-      initials: "AM",
+      text: `Inquiry Bazaar provides excellent opportunities for career growth. The supportive leadership and customer-focused approach have helped me build strong client relationships and achieve my professional goals.`,
+      name: "Janvi Tyagi",
+      role: "Business Development Manager · 7 months at IB",
+      initials: "JT",
       color: "bg-yellow-100 text-yellow-600",
     },
+
+
+
+
+
+
+ {
+      text: `Inquiry Bazaar provides excellent opportunities for career growth. The supportive leadership and customer-focused approach have helped me build strong client relationships and achieve my professional goals.`,
+      name: "Neha Kapoor",
+      role: "Business Development Manager · 4 months at IB",
+      initials: "NK",
+      color: "bg-yellow-100 text-yellow-600",
+    },
+
+
+
+     {
+      text: `Inquiry Bazaar fosters a culture of innovation and teamwork. Working on modern web technologies and client-focused solutions has significantly enhanced my technical skills`,
+      name: "Shruti Gupta",
+      role: " Web Developer · 1.2 years at IB",
+      initials: "SG",
+      color: "bg-yellow-100 text-yellow-600",
+    },
+
+
+        {
+      text: `Inquiry Bazaar fosters a culture of innovation and teamwork. Working on modern web technologies and client-focused solutions has significantly enhanced my technical skills`,
+      name: "Anshuman Tyagi",
+      role: " Web Developer · 7 months at IB",
+      initials: "AT",
+      color: "bg-yellow-100 text-yellow-600",
+    },
+
+
+  
+        {
+      text: `Working at Inquiry Bazaar has allowed me to create impactful social media campaigns that help businesses connect with the right audience. The company encourages creativity, innovation, and continuous learning, making every day exciting and rewarding`,
+      name: "Tisha Nagarwal",
+      role: " Social Media Manager · 1.5 years at IB",
+      initials: "TN",
+      color: "bg-yellow-100 text-yellow-600",
+    },
+
+ {
+      text: `The supportive team culture and freedom to explore new content ideas have helped me grow professionally. Inquiry Bazaar provides excellent opportunities to work on diverse campaigns and stay updated with the latest social media trends.`,
+      name: "Bhumika Papola",
+      role: " Social Media · 1.5 years at IB",
+      initials: "BP",
+      color: "bg-yellow-100 text-yellow-600",
+    },
+
+
   ];
 
   const stats = [

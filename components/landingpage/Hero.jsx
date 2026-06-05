@@ -178,28 +178,28 @@ export default function HeroSection() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* CARD 1 */}
             <div className="bg-white rounded-2xl shadow-xl p-6 flex items-center gap-5 hover:shadow-2xl transition">
-              <ShoppingCart size={40} className="text-gray-600" />
+              <ShoppingCart size={80} className="text-gray-600" />
               <div>
-                <h2 className="text-2xl font-bold">21.9 Cr</h2>
-                <p className="text-gray-500">Buyers</p>
+                <h2 className="text-2xl md:text-3xl mb-2 font-bold">82 %</h2>
+                <p className="text-gray-500">internet traffic in india comes from mobile phones - your buyers are searching on the go not at a desk</p>
               </div>
             </div>
 
             {/* CARD 2 */}
             <div className="bg-white rounded-2xl shadow-xl p-6 flex items-center gap-5 hover:shadow-2xl transition">
-              <Users size={40} className="text-gray-600" />
+              <Users size={80} className="text-gray-600" />
               <div>
-                <h2 className="text-2xl font-bold">86 Lakh</h2>
-                <p className="text-gray-500">Suppliers</p>
+                <h2 className="text-2xl md:text-3xl mb-2 font-bold">50 %</h2>
+                <p className="text-gray-500">internet uers research products and brands on social pltforms before making a purchase decision </p>
               </div>
             </div>
 
             {/* CARD 3 */}
             <div className="bg-white rounded-2xl shadow-xl p-6 flex items-center gap-5 hover:shadow-2xl transition">
-              <Package size={40} className="text-gray-600" />
+              <Package size={80} className="text-gray-600" />
               <div>
-                <h2 className="text-2xl font-bold">12.4 Cr</h2>
-                <p className="text-gray-500">Products & Services</p>
+                <h2 className="text-2xl md:text-3xl mb-2 font-bold">75 %</h2>
+                <p className="text-gray-500">B2B buyers never scroll past Google's first page - if your business isn't there, it simply doesn't exist to them</p>
               </div>
             </div>
           </div>

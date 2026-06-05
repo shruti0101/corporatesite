@@ -8,9 +8,10 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaYoutube,
+
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-
+import Link from "next/link";
 export default function Footer() {
   const sisterSites = [
     {
@@ -170,10 +171,24 @@ const socialLinks = [
 
         {/* Column 4 */}
         <div className="space-y-3">
-          <p>Buyer Tool Kit</p>
-          <p>Post Your Requirement</p>
-          <p>Products You Buy</p>
-          <p>Search Products & Suppliers</p>
+          <Link href="https://buyer.inquirybazaar.com/" className="block hover:text-blue-500">
+            Buyer Tool Kit
+          </Link>
+
+
+          <Link href="https://buyer.inquirybazaar.com/" className="block hover:text-blue-500">
+           Post Your Requirement
+          </Link>
+
+       <Link href="https://dir.inquirybazaar.com/login" className="block hover:text-blue-500">
+          Product You Buy
+          </Link>
+
+
+          <Link href="https://dir.inquirybazaar.com/" className="block hover:text-blue-500">
+          Search Products & Suppliers
+          </Link>
+          
         </div>
 
         {/* Column 5 */}
