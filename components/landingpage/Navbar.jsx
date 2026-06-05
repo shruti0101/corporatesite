@@ -23,9 +23,9 @@ export default function Navbar() {
   { name: "Pricing", href: "/pricing" },
 
   { name: "Articles", href: "/blogs" },
-  { name: "News", href: "/media/news" },
-  { name: "Events", href: "/media/events" },
-  { name: "Gallery", href: "/media/gallery" },
+  // { name: "News", href: "/media/news" },
+  // { name: "Events", href: "/media/events" },
+  // { name: "Gallery", href: "/media/gallery" },
 
   { name: "Login", href: "https://dir.inquirybazaar.com/login" },
   { name: "Help Center", href: "https://www.inquirybazaar.com/faqs" },
