@@ -58,34 +58,38 @@ const [activeTab, setActiveTab] = useState("All");
   return (
     <div>
 
-  <section className="relative sb  w-full h-[50vh] sm:h-[40vh] md:h-[60vh] lg:h-[70vh] bg-[#1A4D6E] flex items-center overflow-hidden">
-      
-      {/* Background Circles */}
-      <div className="absolute right-[-100px] top-[-80px] w-[400px] h-[400px] bg-white/5 rounded-full"></div>
-      <div className="absolute right-[140px] bottom-[10px] w-[300px] h-[300px] bg-white/5 rounded-full"></div>
+<section
+  style={{ backgroundImage: "url(/us.png)" }}
+  className="relative overflow-hidden bg-contain bg-center bg-no-repeat py-12 md:py-20 lg:py-24"
+>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-r from-[#07111f]/55 via-[#0d1b2a]/40 to-[#07111f]/50 backdrop-blur-[0.7px]"></div>
 
-      {/* Content */}
-      <div className=" px-6 md:px-12">
-        <div className="max-w-2xl">
-          
-          {/* Badge */}
-          <span className="inline-block px-5 py-2 rounded-full bg-yellow-400/20 text-yellow-400 text-sm font-semibold tracking-wide uppercase mb-3 md:mb-3">
-         Open Positions
-          </span>
+  {/* Background Circles */}
+  <div className="absolute right-[-100px] top-[-80px] h-[400px] w-[400px] rounded-full bg-yellow-400/10 blur-3xl"></div>
+  <div className="absolute right-[140px] bottom-[10px] h-[300px] w-[300px] rounded-full bg-white/10 blur-3xl"></div>
 
-          {/* Heading */}
-          <h2 className="text-white text-3xl sc md:text-[50px] font-extrabold leading-tight mb-3 md:mb-3">
-       Find the Role That Fits You Best
-          </h2>
+  {/* Content */}
+  <div className="relative z-10 px-6 md:px-12">
+    <div className="max-w-2xl">
+      {/* Badge */}
+      <span className="mb-3 inline-block rounded-full bg-yellow-400/20 px-5 py-2 text-sm font-semibold uppercase tracking-wide text-yellow-300">
+        Open Positions
+      </span>
 
-          {/* Description */}
-          <p className="text-white/80 text-lg md:text-2xl leading-relaxed max-w-2xl">
-         We're growing fast and looking for passionate people across all departments. Explore openings and take the next step in your career.
-          </p>
+      {/* Heading */}
+      <h2 className="sc mb-3 text-3xl font-extrabold leading-tight text-white md:text-[50px]">
+        Find the Role That Fits You Best
+      </h2>
 
-        </div>
-      </div>
-    </section>
+      {/* Description */}
+      <p className="max-w-2xl text-lg leading-relaxed text-white/85 md:text-2xl">
+        We're growing fast and looking for passionate people across all
+        departments. Explore openings and take the next step in your career.
+      </p>
+    </div>
+  </div>
+</section>
 
 
 

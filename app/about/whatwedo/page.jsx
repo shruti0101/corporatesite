@@ -9,7 +9,7 @@ export default function WhatWeDo() {
             <p className="text-white text-[18px] font-semibold tracking-wide">
               INQUIRY BAZAAR
             </p>
-            <p className="text-white text-[14px] mt-[2px]">inquirybazaar.com</p>
+            <a href="https://inquirybazaar.com/" className="text-white text-[14px] mt-[2px] underline">inquirybazaar.com</a>
           </div>
         </div>
 
@@ -264,7 +264,7 @@ export default function WhatWeDo() {
         <div className="w-full">
           <div className="bg-[#080a3c] text-white text-center rounded-2xl py-2 md:py-7 text-[18px] md:text-[20px] font-medium tracking-wide">
             List your business today <span className="mx-2">→</span>{" "}
-            www.inquirybazaar.com
+           <a href="https://inquirybazaar.com/" className="text-white underline">www.inquirybazaar.com</a>
           </div>
         </div>
       </section>

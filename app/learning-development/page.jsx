@@ -59,36 +59,36 @@ const page = () => {
         "Capstone Project: Present to the Leadership Team",
       ],
     },
-    {
-      title: "External Certifications & Courses",
-      desc: "Sponsored learning from Coursera, LinkedIn Learning & more",
-      tag: "Sponsored",
-      icon: "🎓",
-      color: "red",
-      content:
-        "We sponsor up to ₹40,000 per employee per year for external learning. Employees simply apply, get approved, and learn — with no strings attached.",
-      points: [
-        "PMP / PRINCE2 Project Management Certification",
-        "AWS / GCP / Azure Cloud Certifications",
-        "MBA / PGDM Tuition Assistance (Partial)",
-        "Language & Communication Courses",
-      ],
-    },
-    {
-      title: "Wellbeing & Soft Skills",
-      desc: "Because a healthy mind drives peak performance",
-      tag: "Sponsored",
-      icon: "🎓",
-      color: "red",
-      content:
-        "We believe great professionals are well-rounded humans. Our soft skills and wellbeing track helps every employee show up as their best self.",
-      points: [
-        "Mindfulness & Stress Management Sessions",
-        "Effective Communication & Presentation Skills",
-        "Time Management & Personal Productivity",
-        "Unconscious Bias & Inclusive Workplace Training",
-      ],
-    },
+    // {
+    //   title: "External Certifications & Courses",
+    //   desc: "Sponsored learning from Coursera, LinkedIn Learning & more",
+    //   tag: "Sponsored",
+    //   icon: "🎓",
+    //   color: "red",
+    //   content:
+    //     "We sponsor up to ₹40,000 per employee per year for external learning. Employees simply apply, get approved, and learn — with no strings attached.",
+    //   points: [
+    //     "PMP / PRINCE2 Project Management Certification",
+    //     "AWS / GCP / Azure Cloud Certifications",
+    //     "MBA / PGDM Tuition Assistance (Partial)",
+    //     "Language & Communication Courses",
+    //   ],
+    // },
+    // {
+    //   title: "Wellbeing & Soft Skills",
+    //   desc: "Because a healthy mind drives peak performance",
+    //   tag: "Sponsored",
+    //   icon: "🎓",
+    //   color: "red",
+    //   content:
+    //     "We believe great professionals are well-rounded humans. Our soft skills and wellbeing track helps every employee show up as their best self.",
+    //   points: [
+    //     "Mindfulness & Stress Management Sessions",
+    //     "Effective Communication & Presentation Skills",
+    //     "Time Management & Personal Productivity",
+    //     "Unconscious Bias & Inclusive Workplace Training",
+    //   ],
+    // },
   ];
 
   const colorStyles = {
@@ -278,10 +278,10 @@ const page = () => {
             </p>
 
             <a
-              href="mailto:learning@inquirybazaar.com"
+              href="mailto:hr@inquirybazaar.com"
               className="text-[var(--teal)] font-semibold text-sm sm:text-base hover:underline"
             >
-              learning@inquirybazaar.com →
+              hr@inquirybazaar.com →
             </a>
           </div>
         </div>
