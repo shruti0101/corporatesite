@@ -1,89 +1,101 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Grid, Autoplay } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
+
 import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/grid";
+import "swiper/css/pagination";
 
-export default function BrandSection() {
-  const logos = [
-    "/clientimages/1.webp",
-    "/clientimages/2.webp",
-    "/clientimages/3.png",
-    "/clientimages/4.webp",
-    "/clientimages/5.png",
-    "/clientimages/6.webp",
-    "/clientimages/7.png",
-    "/clientimages/8.png",
-    "/clientimages/9.png",
-    "/clientimages/10.webp",
-      "/clientimages/11.webp",
-    "/clientimages/12.webp",
-    "/clientimages/13.webp",
-     "/clientimages/14.webp",
-      "/clientimages/15.webp",
-          "/clientimages/16.png",
-              "/clientimages/17.png",
-               "/clientimages/18.webp",
-  ];
+const testimonials = [
+  {
+    name: "matrix tissues",
+    photo: "/client1logo.webp",
+    message:
+      "InquiryBazaar ne sirf listing nahi di, balki hume real business inquiries milna start hua. Leads ka quality genuinely better hai aur conversion bhi improve hua.",
+  },
+  {
+    name: "exotic crate",
+    photo: "/client2logo.webp",
+    message:
+      "Pehle hum multiple platforms use kar rahe the but results clear nahi the. Yahan hume proper visibility aur genuine buyers mile — exactly what we needed.",
+  },
+  {
+    name: "shree shakti infratech",
+    photo: "/client3logo.webp",
+    message:
+      "InquiryBazaar ka biggest advantage hai targeted inquiries. Random calls band ho gaye aur sirf serious buyers hi connect karte hain.",
+  },
+  {
+    name: "strides design studio",
+    photo: "/client5logo.webp",
+    message:
+      "Unki marketing approach alag hai — sirf listing nahi, actively promote karte hain. Isse humari brand visibility kaafi strong hui hai.",
+  },
+  {
+    name: "bhagya laxmi industries",
+    photo: "/client4logo.webp",
+    message:
+      "Platform use karna simple hai aur results transparent hain. Hume clearly dikhta hai inquiries kahan se aa rahi hain. Highly Recommended",
+  },
+  {
+    name: "mr dates",
+    photo: "/client6logo.webp",
+    message:
+      "InquiryBazaar ne humara time aur effort dono bachaya. Ab hume sirf relevant aur high-intent buyers se hi inquiries milti hain.",
+  },
+];
 
+export default function TestimonialSection() {
   return (
-    <section className="py-4 md:py-8 bg-[#f5f5f5]">
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="bg-white py-6 text-center max-w-6xl mx-auto px-6">
+      <h2 className="text-3xl md:text-4xl mb-4 font-semibold  text-gray-900">
+        What Our Clients Say
+      </h2>
 
-        {/* TITLE */}
-        <h2 className="text-4xl md:text-4xl font-semibold text-center text-gray-700">
-          Trusted By Global Brands
-        </h2>
+      <Swiper
+        modules={[Autoplay, Pagination]}
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        pagination={{ clickable: true }}
+        loop
+        spaceBetween={30}
+        slidesPerView={3}
+        className="!pb-10"
+        breakpoints={{
+          320: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+      >
+        {testimonials.map(({ name, photo, message }, index) => (
+          <SwiperSlide key={index} className="!h-auto flex">
 
-        <div className="w-28 h-[3px] bg-red-500 mx-auto mt-2 md:mt-3  md:mb-12"></div>
+            {/* CARD */}
+            <div className="flex flex-col w-full bg-white rounded-2xl shadow-lg p-4 h-full">
 
-        {/* SWIPER */}
-        <Swiper
-          modules={[Navigation, Grid, Autoplay]}
-          navigation
-          autoplay={{ delay: 2500, disableOnInteraction: false }}
-          loop={true}
-          spaceBetween={40}
-          grid={{
-            rows: 2,
-            fill: "row",
-          }}
-          breakpoints={{
-            0: {
-              slidesPerView: 2,
-              grid: { rows: 2 },
-              spaceBetween:20 ,
-            },
-            640: {
-              slidesPerView: 3,
-              grid: { rows: 2 },
-            },
-            768: {
-              slidesPerView: 4,
-              grid: { rows: 2 },
-            },
-            1024: {
-              slidesPerView: 5,
-              grid: { rows: 2 }, // 👉 5 x 2 = EXACT layout
-            },
-          }}
-        >
-          {logos.map((logo, i) => (
-            <SwiperSlide key={i}>
-              <div className="flex items-center justify-center h-[130px]">
+              {/* Logo */}
+              <div className="mb-4 flex items-center justify-center h-12">
                 <img
-                  src={logo}
-                  alt="brand"
-                  className="h-[60px] object-contain   transition"
+                  src={photo}
+                  alt={name}
+                  className="max-h-full object-contain"
                 />
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
 
-      </div>
+              {/* Message */}
+              <p className="text-black italic text-sm leading-relaxed flex-grow">
+                “{message}”
+              </p>
+
+              {/* Name */}
+              <p className="font-semibold capitalize text-gray-900">
+                {name}
+              </p>
+
+            </div>
+
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   );
 }

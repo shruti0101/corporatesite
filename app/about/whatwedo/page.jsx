@@ -1,17 +1,9 @@
 export default function WhatWeDo() {
   return (
     <>
-      <section className="w-full bg-[#1A4D6E] pt-6 md:pt-8 md:pb-6 px-6 md:px-24">
+      <section className="w-full bg-[#1A4D6E] pt-6 md:pt-9 md:pb-6 px-6 md:px-24">
         {/* Top Left Brand */}
-        <div className="flex items-start gap-4 mb-5 md:mb-6">
-          <div className="w-[3px] h-[42px] bg-white" />
-          <div>
-            <p className="text-white text-[18px] font-semibold tracking-wide">
-              INQUIRY BAZAAR
-            </p>
-            <a href="https://inquirybazaar.com/" className="text-white text-[14px] mt-[2px] underline">inquirybazaar.com</a>
-          </div>
-        </div>
+     
 
         {/* Tag */}
         <div className="inline-block bg-yellow-500/30 text-white text-[13px] px-4 py-[6px] rounded-full font-medium mb-3 md:mb-3">

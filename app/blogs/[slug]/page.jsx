@@ -14,19 +14,22 @@ const components = {
     ),
   },
 
+
+
+
+
+
+  
   block: {
     normal: ({ children }) => (
       <p className="text-black leading-8 mb-5">{children}</p>
     ),
-
     h1: ({ children }) => (
       <h1 className="text-3xl font-bold mb-4">{children}</h1>
     ),
-
     h2: ({ children }) => (
       <h2 className="text-2xl font-semibold mb-3">{children}</h2>
     ),
-
     h3: ({ children }) => (
       <h3 className="text-xl font-semibold mb-3">{children}</h3>
     ),
@@ -44,6 +47,104 @@ const components = {
       </a>
     ),
   },
+
+
+
+
+
+
+
+  // extra button type
+  types: {
+
+
+
+  // extra image in doc
+
+  image: ({ value }) => (
+  <figure className="my-8">
+    <Image
+      src={value.asset.url}
+      alt={value.alt || "Blog Image"}
+      width={500}
+      height={500}
+      className="w-full rounded-2xl shadow-lg object-contain"
+    />
+
+    {value.caption && (
+      <figcaption className="text-center text-sm text-gray-500 mt-3 italic">
+        {value.caption}
+      </figcaption>
+    )}
+  </figure>
+),
+
+
+
+    button: ({ value }) => (
+      <div className="my-8 text-start">
+        <Link
+          href={value.url}
+          className="inline-block bg-[#F1781B] text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90"
+        >
+          {value.text}
+        </Link>
+      </div>
+    ),
+
+
+
+  cta: ({ value }) => (
+  <div
+    className="relative overflow-hidden rounded-3xl my-10 "
+    style={{
+      background: value.backgroundColor || "#0F172A",
+    }}
+  >
+    {/* Decorative circles */}
+    <div className="absolute -top-16 -right-16 h-48 w-48 rounded-full bg-white/10"></div>
+    <div className="absolute -bottom-20 -left-20 h-56 w-56 rounded-full bg-white/5"></div>
+
+    <div className="relative z-10 px-8 py-10 md:px-12 md:py-14">
+      <div className="max-w-3xl">
+        <span className="inline-flex items-center rounded-full bg-white/15 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-white mb-5 ">
+          🚀 Get Started Today
+        </span>
+
+        <h3 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5 uppercase animate-pulse">
+          {value.heading}
+        </h3>
+
+        <p className="text-white/80 text-base md:text-lg leading-8 mb-8">
+          {value.description}
+        </p>
+
+        <Link
+          href={value.buttonUrl}
+          className="inline-flex items-center gap-3 rounded-xl bg-[#F1781B] px-7 py-4 text-white font-semibold shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+        >
+          {value.buttonText}
+          <span className="text-xl">→</span>
+        </Link>
+      </div>
+    </div>
+  </div>
+),
+
+
+
+
+  },
+
+
+
+  
+
+
+
+
+
+
 };
 
 // SINGLE BLOG
@@ -54,7 +155,12 @@ async function getBlog(slug) {
         title,
         date,
         excerpt,
-        content,
+       content[]{
+  ...,
+  asset->
+},
+        cta,
+        tags,
         metaTitle,
         metaDescription,
         "imageUrl": image.asset->url
@@ -100,7 +206,7 @@ export default async function BlogDetail({ params }) {
       >
      
         <div className="flex flex-col pl-10 pt-5 items-start justify-start">
-           <p className="text-orange-500 text-sm ">Home /{blog.title} </p>
+           <p className="text-orange-500 text-sm ">Home /<span className="capitalize">{blog.title}</span>  </p>
           <h2 className="text-white text-5xl md:text-xl font-bold z-10 ">
            
           </h2>
@@ -138,14 +244,70 @@ export default async function BlogDetail({ params }) {
         : "No date"}
     </p>
 
-    <PortableText
-      value={blog.content}
-      components={components}
-    />
+<PortableText value={blog.content} components={components} />
+
+{blog.cta && (
+  <div
+    className="relative overflow-hidden rounded-3xl "
+    style={{
+      background: blog.cta.backgroundColor || "#0F172A",
+    }}
+  >
+    {/* Background Effects */}
+    <div className="absolute -top-20 -right-20 w-60 h-60 rounded-full bg-orange-600/15 "></div>
+    <div className="absolute -bottom-24 -left-24 w-72 h-72 rounded-full bg-orange-600/15 opacity-30"></div>
+
+    <div className="relative z-10 px-8 py-8 md:px-12 ">
+      <div className="max-w-3xl">
+        <span className="inline-flex items-center bg-white/15 text-black text-xs uppercase tracking-widest font-semibold px-4 py-2 rounded-full mb-5">
+          🚀 Get Started Today
+        </span>
+
+        <h2 className="text-3xl md:text-4xl font-bold text-black leading-tight mb-5">
+          {blog.cta.heading}
+        </h2>
+
+        <p className="text-black/80 text-lg leading-8 mb-8">
+          {blog.cta.description}
+        </p>
+
+        <Link
+          href={blog.cta.buttonUrl}
+          className="inline-flex items-center gap-3 bg-[#C8921C] hover:bg-[#b27e17] transition-all duration-300 text-white font-semibold px-7 py-4 rounded-xl shadow-2xl"
+        >
+          {blog.cta.buttonText}
+          <span className="text-xl">→</span>
+        </Link>
+      </div>
+    </div>
+  </div>
+)}
+
+
+{blog.tags?.length > 0 && (
+  <div className="mt-10">
+    <div className="flex flex-wrap gap-3">
+      {blog.tags.map((tag, index) => (
+        <Link
+          key={index}
+          href={`/tag/${encodeURIComponent(
+            tag.toLowerCase().replace(/\s+/g, "-")
+          )}`}
+          className="px-4 py-2 bg-gray-100 border border-gray-200 rounded-md text-sm font-medium hover:bg-[#F1781B] hover:text-white hover:border-[#C8921C] transition-all duration-300"
+        >
+          {tag}
+        </Link>
+      ))}
+    </div>
+  </div>
+)}
+
+
+
 
   </main>
 
-  {/* RIGHT SIDEBAR */}
+{/* right sidebar */}
   <aside className="lg:col-span-1 hidden md:block order-1 lg:order-2">
 
     <div className="sticky top-24">

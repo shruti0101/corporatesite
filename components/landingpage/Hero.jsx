@@ -65,54 +65,80 @@ export default function HeroSection() {
     },
   ];
 
-  const data = {
-    buyer: [
-      {
-        name: "Amit Sharma",
-        text: "Amazing platform! Found reliable suppliers quickly and easily.Amazing platform! Found reliable suppliers quickly and easily.Amazing platform! ",
-      },
-      {
-        name: "Neha Verma",
-        text: "Great experience. The process is smooth and efficient.Amazing platform! Found reliable suppliers quickly and easily.Amazing platform! ",
-      },
-      {
-        name: "Rahul Mehta",
-        text: "Highly recommended for businesses looking for quality vendors.Amazing platform! Found reliable suppliers quickly and easily.",
-      },
 
-      {
-        name: "Rohit Jain",
-        text: "Excellent exposure and genuine leads every day.Amazing platform! Found reliable suppliers quickly and easily,The process is smooth and efficient.",
-      },
-      {
-        name: "Neha Verma",
-        text: "Great experience. The process is smooth and efficient.The process is smooth and efficient.The process is smooth and efficient.",
-      },
-    ],
-    seller: [
-      {
-        name: "Priya Singh",
-        text: "Helped me grow my business and reach more customers.The process is smooth and efficient.The process is smooth and efficient The process is smooth and efficient..",
-      },
-      {
-        name: "Rohit Jain",
-        text: "Excellent exposure and genuine leads every day.The process is smooth and efficient.The process is smooth and efficient.The process is smooth and efficient.",
-      },
-      {
-        name: "Anjali Gupta",
-        text: "A perfect platform to scale your business online.The process is smooth and efficient.The process is smooth and efficient The process is smooth and efficient..",
-      },
-      {
-        name: "Rohit Jain",
-        text: "Excellent exposure and genuine leads every day The process is smooth and efficient.The process is smooth and efficient.The process is smooth and efficient..",
-      },
+const data = {
+  buyer: [
+    {
+      name: "Amit Sharma",
+      text: "Inquiry Bazaar made it incredibly easy to connect with verified suppliers. We received multiple quality quotations within a short time.",
+    },
+    {
+      name: "Neha Verma",
+      text: "The platform saved us a lot of time in finding trusted vendors. The entire inquiry process is simple and hassle-free.",
+    },
+    {
+      name: "Rahul Mehta",
+      text: "We were able to compare several suppliers and choose the best one for our business requirements. Highly recommended.",
+    },
+    {
+      name: "Vikas Arora",
+      text: "Finding genuine manufacturers used to be difficult, but Inquiry Bazaar made the process smooth and transparent.",
+    },
+    {
+      name: "Pooja Malhotra",
+      text: "The supplier network is impressive. We found the right business partner much faster than expected.",
+    },
+    {
+      name: "Sandeep Kapoor",
+      text: "Very user-friendly platform with authentic business listings. It helped us source quality products efficiently.",
+    },
+    {
+      name: "Karan Bhatia",
+      text: "Excellent experience. The inquiries we posted received quick responses from reliable suppliers across India.",
+    },
+    {
+      name: "Ritika Agarwal",
+      text: "A great marketplace for businesses looking to expand their sourcing options without wasting time.",
+    },
+  ],
 
-      {
-        name: "Rohit Jain",
-        text: "Excellent exposure and genuine leads every day.The process is smooth and efficient.The process is smooth and efficient.The process is smooth ",
-      },
-    ],
-  };
+  seller: [
+    {
+      name: "Priya Singh",
+      text: "Since joining Inquiry Bazaar, we've seen a significant increase in genuine business inquiries and quality leads.",
+    },
+    {
+      name: "Rohit Jain",
+      text: "The platform has helped us reach buyers from different regions and expand our customer base effectively.",
+    },
+    {
+      name: "Anjali Gupta",
+      text: "Inquiry Bazaar is a reliable platform for promoting our products and generating consistent business opportunities.",
+    },
+    {
+      name: "Manish Khanna",
+      text: "We started receiving targeted inquiries almost immediately after listing our business. Great ROI.",
+    },
+    {
+      name: "Deepak Verma",
+      text: "The quality of leads is excellent, and the support team is always available whenever assistance is needed.",
+    },
+    {
+      name: "Sneha Kapoor",
+      text: "Our online visibility improved dramatically, helping us connect with serious buyers from across the country.",
+    },
+    {
+      name: "Arjun Malhotra",
+      text: "A valuable platform for manufacturers and wholesalers. It has become an important part of our sales strategy.",
+    },
+    {
+      name: "Kavita Sharma",
+      text: "The business inquiries we receive are genuine and relevant, making it easier to convert prospects into customers.",
+    },
+  ],
+};
+
+
 
   const [active, setActive] = useState(tabs[0]);
   const [activeTab, setActiveTab] = useState("buyer");
@@ -260,9 +286,15 @@ export default function HeroSection() {
             </div>
 
             {/* CTA */}
+
+<Link href="/about/whoweare">
+
+
             <button className="bg-[#F1791C] hover:bg-[#F1791C] text-white px-6 py-3 rounded-lg font-medium transition">
               Learn More →
             </button>
+</Link>
+
           </motion.div>
 
           {/* IMAGE SIDE */}
@@ -323,10 +355,15 @@ export default function HeroSection() {
             </p>
 
             {/* CTA BUTTON */}
+
+<Link href="https://dir.inquirybazaar.com/login">
+
             <button className="group bg-[#F1791C] hover:bg-[#f2710e] text-white px-7 py-3 rounded-xl font-medium text-lg flex items-center gap-2 shadow-lg shadow-teal-500/30 transition">
               Read More
               <span className="group-hover:translate-x-1 transition">→</span>
             </button>
+</Link>
+
           </motion.div>
 
           {/* RIGHT IMAGE */}
@@ -470,7 +507,7 @@ export default function HeroSection() {
           >
             {data[activeTab].map((item, i) => (
               <SwiperSlide key={i}>
-                <div className="bg-white rounded-xl shadow-lg  p-6 h-full hover:shadow-xl transition">
+                <div className="bg-white rounded-xl h-60 shadow-lg  p-6  hover:shadow-xl transition">
                   {/* REVIEW TEXT */}
                   <p className="text-gray-600 mb-6 leading-relaxed">
                     “{item.text}”

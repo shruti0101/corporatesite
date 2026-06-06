@@ -106,9 +106,9 @@ const handleSearch = (value) => {
       items: [
             { name: "Articles", href: "/blogs" },
    
-        { name: "News", href: "/media/news" },
-        { name: "Events", href: "/media/events" },
-        { name: "Gallery", href: "/media/gallery" },
+        // { name: "News", href: "/media/news" },
+        // { name: "Events", href: "/media/events" },
+        // { name: "Gallery", href: "/media/gallery" },
       ],
     },
    
@@ -297,7 +297,7 @@ const handleSearch = (value) => {
 
         {/* ✅ MOBILE MENU */}
         {mobileOpen && (
-          <div ref={menuRef} className="md:hidden border-t py-4 space-y-4">
+          <div ref={menuRef} className="md:hidden border-t py-4 h-200 space-y-4">
             {/* SEARCH */}
            <div className="relative">
   <div className="flex items-center w-[300px] lg:w-[420px] h-[40px] bg-gray-100 rounded-full overflow-hidden">
