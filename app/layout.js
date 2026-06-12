@@ -8,9 +8,9 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: " inquirybazaar",
+  title: "Best B2B Marketplace in India | B2B Portal & Industrial Marketplace",
   description:
-    "inquirybazaar.",
+    "Inquiry Bazaar is a top B2B marketplace in India connecting verified buyers, suppliers, and manufacturers. Grow your business through the best B2B platform and industrial marketplace for genuine leads and business opportunities.",
   icons: {
     icon: "/logoo.png",
   },
