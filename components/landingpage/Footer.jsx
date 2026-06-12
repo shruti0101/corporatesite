@@ -19,7 +19,7 @@ export default function Footer() {
       href: "https://www.promozionebranding.com/",
     },
     { name: "Promotion Branding", href: "https://www.promotionbranding.com/" },
-    { name: "Promote Bharat", href: "https://promotebharat.com/" },
+    // { name: "Promote Bharat", href: "https://promotebharat.com/" },
     {
       name: "Top 10 Digital Marketing Agency",
       href: "https://promozionebranding.com/",
