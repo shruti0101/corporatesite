@@ -57,11 +57,13 @@ export default function HeroSection() {
       id: 1,
       title: "Kaam Yahin Banta Hai",
       image: "/hero1.jpg",
+      href:"https://www.youtube.com/watch?v=5jNLNNqZv3g "
     },
     {
       id: 2,
       title: "Grow Your Business Faster",
       image: "/hero2.jpg",
+      href:"https://www.youtube.com/watch?v=Msm6cxZM_UY"
     },
   ];
 
@@ -185,14 +187,15 @@ const data = {
                     {slide.title}
                   </motion.h1>
 
-                  <motion.button
+                  <motion.a
+                  href={slide.href}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3 }}
                     className="bg-[#F1791C] hover:bg-[#e06b11] px-6 py-3 rounded-lg text-lg font-medium flex items-center gap-2"
                   >
                     Watch Now →
-                  </motion.button>
+                  </motion.a>
                 </div>
               </div>
             </SwiperSlide>
